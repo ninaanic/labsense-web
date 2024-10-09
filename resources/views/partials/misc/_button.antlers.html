@@ -1,0 +1,10 @@
+---
+style: primary
+---
+
+<a href={{ data.link }} x-data="{ variant: '{{ view:style }}' }" 
+class="btn"
+:class="[variant=='primary' && 'btn-primary', variant=='secondary' && 'btn-secondary', variant=='neutral' && 'btn-neutral', variant=='outline' && 'btn-outline']">
+    {{ data.text }}
+    {{ slot }}
+</a>

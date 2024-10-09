@@ -1,0 +1,18 @@
+<div class="flex justify-center py-16 relative overflow-hidden rounded-b-3xl" data-dark-hero>
+
+    <img src="{{ data.image.url }}" alt="bg-image" class=" absolute left-0 top-0 w-full h-full object-cover">
+    <div class=" bg-black opacity-30 absolute left-0 top-0 w-full h-full"></div>
+    <div class=" bg-gradient-to-t from-black via-black/25 to-transparent absolute left-0 top-0 w-full h-full"></div>
+
+    <div class="body-container min-h-[650px] lg:min-h-[750px] py-8 lg:py-16 flex flex-col justify-end lg:grid grid-cols-2 lg:grid-cols-12 gap-4 items-end z-20">
+        <h1 class="text-white text-5xl lg:text-7xl col-span-2 lg:col-span-6">{{ data.header }}</h1>
+
+        <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9">
+            <div class="dark bard-large">{{ data.description }}</div>
+
+            {{ partial:misc/button :data="data.action" }}
+                <img src="/assets/arrow.svg" alt="arrow">
+            {{ /partial:misc/button }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,368 @@
+title: 'Home page blueprint'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero
+            field:
+              type: group
+              display: Hero
+              instructions: 'A hero section is the visually dominant area at the top of a webpage, designed to capture users’ attention. It often includes a hero image, headline, subheadline, and a call-to-action (CTA). It sets the tone and provides key information for the visitor immediately.'
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: two_cols_text
+            field:
+              type: group
+              display: 'Two cols text'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: cards_with_image_on_left
+            field:
+              type: group
+              display: 'Cards with image on left'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: cards
+                  field:
+                    type: replicator
+                    display: Cards
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card:
+                            display: Card
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon
+                              -
+                                handle: header
+                                field:
+                                  type: text
+                                  display: Header
+                              -
+                                handle: description
+                                field:
+                                  type: markdown
+                                  display: Description
+          -
+            handle: centered_cards
+            field:
+              type: group
+              display: 'Centered cards'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: cards
+                  field:
+                    type: replicator
+                    display: Cards
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card:
+                            display: Card
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon
+                              -
+                                handle: header
+                                field:
+                                  type: text
+                                  display: Header
+                              -
+                                handle: description
+                                field:
+                                  type: markdown
+                                  display: Description
+          -
+            handle: quote_block
+            field:
+              type: group
+              display: Quote
+              fields:
+                -
+                  handle: text
+                  field:
+                    type: textarea
+                    display: Text
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: image_left_with_text_on_right
+            field:
+              type: group
+              display: 'Image left with text on right'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: cards
+                  field:
+                    type: replicator
+                    display: Cards
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card:
+                            display: Card
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon
+                              -
+                                handle: header
+                                field:
+                                  type: text
+                                  display: Header
+                              -
+                                handle: description
+                                field:
+                                  type: markdown
+                                  display: Description
+          -
+            handle: image_right_with_text_on_left
+            field:
+              type: group
+              display: 'Image right with text on left'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: cta
+            field:
+              type: group
+              display: CTA
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

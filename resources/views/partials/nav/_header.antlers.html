@@ -1,0 +1,108 @@
+<div class="w-full" x-data="{ isFixed: false, darkBG: true, mobileOpened:false }" x-init="
+window.addEventListener('scroll', () => {
+    window.pageYOffset > 700 ? isFixed = true : isFixed = false;
+}); 
+if (document.querySelector('[data-dark-hero]')) {
+    darkBG = true;
+}
+else{
+    darkBG = false;
+}
+">
+    <nav :class="isFixed ? 'fixed top-3 left-0 w-full' : 'absolute bg-transparent left-0 top-0'" class="flex justify-center z-50 w-full duration-300">
+        <div 
+        :class="isFixed ? 'bg-white rounded-full border border-black/15' : 'bg-transparent'"
+        class="body-container flex justify-between items-center gap-8 p-2 pl-5">
+
+            <div class="flex items-center gap-20">
+                <a href="/">
+                    <template x-if="(!isFixed && darkBG)">
+                        <img src="/assets/WhiteLogo.svg" alt="Logo" class="h-8 w-fit">
+                    </template>
+                    <template x-if="(isFixed || !darkBG)">
+                        <img src="/assets/ColoredLogo.svg" alt="Logo" class="h-8 w-fit">
+                    </template>
+                </a>
+
+                <div class="gap-2 items-center hidden lg:flex ">
+                    {{ nav:hero_navigation }}
+                        <div class="relative" x-data="{ menuBarOpen: false }" x-on:click.away="menuBarOpen=false" x-on:mouseover="menuBarOpen=true" x-on:mouseleave="menuBarOpen=false">
+                            <a href="{{ url }}" x-on:click="menuBarOpen=true;" 
+                            :class="(isFixed || !darkBG) ? 'text-black/75 hover:bg-black/5 ' : 'text-white hover:bg-white/15 '"
+                            class=" text-base leading-none font-medium flex gap-3 items-center px-3 py-2 rounded-md">
+                                {{ title }}
+                                {{ if children }}
+                                    <img 
+                                    :class="(isFixed || !darkBG) ? 'invert opacity-75' : ''"
+                                    src="/assets/chevrondown.svg" alt="Chevron"
+                                    />
+                                {{ /if }}
+                            </a>
+
+                            {{ if children }}
+                                <div x-show="menuBarOpen" class="absolute top-8 right-0 w-[300px] pt-2">
+                                    <div class="flex flex-col gap-0 p-3 rounded-md bg-white shadow-md border border-black/15">
+                                        {{ children }}
+                                            <a href="{{ url }}" class="text-base leading-none font-medium flex gap-3 items-center px-3 py-2 rounded-md text-black/75 hover:bg-black/5 ">{{ title }}</a>
+                                        {{ /children }}
+                                    </div>
+                                </div>
+                            {{ /if }}
+                        </div>
+                    {{ /nav:hero_navigation }}
+                </div>
+            </div>
+
+            <div :class="[isFixed ? 'nav-rounded' : '',(isFixed || !darkBG) ? 'dark' : '' ]" class="items-center gap-2 hidden lg:flex">
+                {{ navigation_helper:actions }}
+
+                    {{ partial:misc/button :data="action" :style="style" }}
+                        {{ if show_icon }} <img src="{{ image.url }}" alt="{{ image.alt }}"/> {{ /if }}
+                    {{ /partial:misc/button }}
+
+                {{ /navigation_helper:actions }}
+            </div>
+
+            <div class="block lg:hidden">
+                <button class="flex size-8 justify-center items-center" x-on:click="mobileOpened=true">
+                    <img :class="(isFixed || !darkBG) ? 'invert opacity-75' : ''" src="/assets/mdi_menu.svg" alt="Menu icon">
+                </button>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div x-show="mobileOpened" class="fixed left-0 top-0 z-50 w-full h-full bg-white p-3 flex flex-col gap-2">
+        <div class="flex items-center justify-between">
+            <a href="/">
+                <img src="/assets/ColoredLogo.svg" alt="Logo" class="h-8 w-fit">
+            </a>
+
+            <button class="flex size-8 justify-center items-center" x-on:click="mobileOpened=false">
+                <img src="/assets/mdi_menu.svg" alt="Menu icon" class="invert">
+            </button>
+        </div>
+
+        <div class="py-4 border-y border-black/15 flex flex-col gap-1">
+            {{ nav:hero_navigation }}
+                <div>
+                    <a href="{{ url }}" class="text-black/75 hover:bg-black/5  text-base leading-none font-medium flex gap-3 items-center px-3 py-2 rounded-md justify-between">
+                        {{ title }}
+                        {{ if children }}
+                            <img src="/assets/chevrondown.svg" alt="Chevron" class="invert opacity-75"/>
+                        {{ /if }}
+                    </a>
+
+                    {{ if children }}
+                        <div class="flex flex-col gap-0 p-3 rounded-md bg-black/5 border border-black/15">
+                            {{ children }}
+                                <a href="{{ url }}" class="text-base leading-none font-medium flex gap-3 items-center px-3 py-2 rounded-md text-black/75 hover:bg-black/5 ">{{ title }}</a>
+                            {{ /children }}
+                        </div>
+                    {{ /if }}
+                </div>
+            {{ /nav:hero_navigation }}
+        </div>
+    </div>
+</div>
+

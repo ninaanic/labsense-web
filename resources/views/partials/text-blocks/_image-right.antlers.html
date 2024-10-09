@@ -1,0 +1,27 @@
+---
+text-wide: false
+---
+
+<div class="flex justify-center py-14 lg:py-20">
+    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-4">
+
+        <div class="flex flex-col gap-8 lg:gap-12 col-span-2 {{ if view:text-wide }} lg:col-span-6 {{ else }} lg:col-span-4 {{ /if }} justify-center">
+            <div class="flex flex-col gap-6 lg:gap-8">
+                <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal ">{{ data.header }}</p>
+
+                <div class="bard-large">
+                    {{ data.description }}
+                </div>
+            </div>
+
+            {{ partial:misc/button :data="data.action" }}
+                <img src="/assets/arrow.svg" alt="arrow">
+            {{ /partial:misc/button }}
+        </div>
+
+        <div class="w-full py-16 col-span-2 min-h-[350px] relative {{ if view:text-wide }} lg:col-span-4 lg:col-start-9 {{ else }} lg:col-span-6 lg:col-start-7 {{ /if }}">
+            <img src="{{ data.image.url }}" alt="{{ data.image.alt }}" class="w-full h-full rounded-2xl absolute left-0 top-0 object-cover"/>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="flex justify-center py-14 lg:py-20">
+    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-4">
+
+        <div class="flex flex-col gap-12 col-span-2 lg:col-span-6">
+            <div class="flex flex-col gap-6 lg:gap-8">
+                <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal">{{ data.header }}</p>
+
+                <div class="bard-large">
+                    {{ data.description }}
+                </div>
+            </div>
+
+            <div class="min-h-[300px] rounded-2xl w-full h-full overflow-hidden relative">
+                <img src={{ data.image.url }} alt="Block image" class="w-full h-full absolute top-0 left-0 object-cover">
+            </div>
+        </div>
+
+        <div class="col-span-2 lg:col-span-4 lg:col-start-9 flex flex-col gap-6">
+            {{ foreach:data.cards }}
+                {{ partial:cards/card-base :data="value" }}
+            {{ /foreach:data.cards }}
+        </div>
+
+    </div>
+</div>

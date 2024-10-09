@@ -1,0 +1,62 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: actions
+            field:
+              type: replicator
+              display: Actions
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    card:
+                      display: Card
+                      fields:
+                        -
+                          handle: action
+                          field:
+                            type: group
+                            display: Action
+                            fields:
+                              -
+                                handle: text
+                                field:
+                                  type: text
+                                  display: Text
+                              -
+                                handle: link
+                                field:
+                                  type: link
+                                  display: Link
+                        -
+                          handle: show_icon
+                          field:
+                            type: toggle
+                            display: 'Show icon'
+                            width: 25
+                        -
+                          handle: image
+                          field:
+                            container: assets
+                            type: assets
+                            display: Image
+                            width: 75
+                            if:
+                              show_icon: 'equals true'
+                            max_files: 1
+                        -
+                          handle: style
+                          field:
+                            options:
+                              -
+                                key: outline
+                                value: Outline
+                              -
+                                key: primary
+                                value: Primary
+                            type: select
+                            display: Style

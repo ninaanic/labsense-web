@@ -1,0 +1,13 @@
+{{ partial:heros/home-hero :data="hero" }}
+
+{{ partial:text-blocks/two-cols :data="two_cols_text" }}
+
+{{ if ( (centered_cards.cards | length) > 3 ) }}
+    {{ partial:cards/cards-center :data="centered_cards" }}
+{{ else }}
+    {{ partial:cards/left-image :data="centered_cards" }}
+{{ /if }}
+
+{{ partial:cards/left-image-2 :data="image_left_with_text_on_right" }}
+
+{{ partial:ctas/block :data="cta" }}

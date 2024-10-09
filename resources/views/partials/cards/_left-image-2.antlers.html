@@ -1,0 +1,27 @@
+<div class="flex justify-center py-14 lg:py-20">
+    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-4">
+
+        <div class="col-span-2 lg:col-span-4 min-h-16">
+            <div class="min-h-[300px] rounded-2xl w-full h-full overflow-hidden relative">
+                <img src={{ data.image.url }} alt="Block image" class="w-full h-full absolute top-0 left-0 object-cover">
+            </div>
+        </div>
+
+        <div class="col-span-2 lg:col-span-6 lg:col-start-7 flex flex-col gap-6 lg:gap-12">
+            <div class="flex flex-col gap-6 lg:gap-8">
+                <p class="text-4xl text-nile-blue-800 leading-normal">{{ data.header }}</p>
+
+                <div class="bard-large">
+                    {{ data.description }}
+                </div>
+            </div>
+
+            <div class="gap-4 grid grid-cols-1 lg:grid-cols-2">
+                {{ foreach:data.cards }}
+                    {{ partial:cards/card-base :data="value" style="green" }}
+                {{ /foreach:data.cards }}
+            </div>
+        </div>
+
+    </div>
+</div>

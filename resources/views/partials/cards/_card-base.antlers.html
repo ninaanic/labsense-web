@@ -1,0 +1,16 @@
+---
+style: blue
+---
+
+<div class="flex flex-col gap-6 p-6 rounded-xl bg-white">
+    {{ if data.icon }}
+        <div class="size-12 rounded-full bg-nile-blue-800 flex items-center justify-center {{ if view:style=='green' }} !bg-jade-500 {{ /if }}">
+            <img src={{ data.icon.url }} alt="Icon" class="size-6">
+        </div>
+    {{ /if }}
+
+    <div class="flex flex-col gap-2">
+        <p class="text-xl text-nile-blue-800">{{ data.header }}</p>
+        <div class="bard">{{ data.description }}</div>
+    </div>
+</div>
