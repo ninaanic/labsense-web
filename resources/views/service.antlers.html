@@ -1,6 +1,16 @@
-{{ partial:heros/home-hero :data="hero" }}
+{{ partial:heros/general-hero :data="hero" }}
 
 {{ partial:text-blocks/two-cols :data="two_cols_text" }}
+
+{{ if full_image.image }}
+    <div class="flex justify-center py-14 lg:py-20">
+        <div class="body-container">
+            <div class="min-h-[300px] rounded-2xl w-full overflow-hidden relative">
+                <img src={{ full_image.image.url }} alt="{{ full_image.image.alt }}" class="w-full h-full absolute top-0 left-0 object-cover">
+            </div>
+        </div>
+    </div>
+{{ /if }}
 
 {{ if ( (centered_cards.cards | length) > 3 ) }}
     {{ partial:cards/cards-center :data="centered_cards" }}

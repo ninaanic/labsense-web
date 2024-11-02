@@ -3,12 +3,12 @@ id: f0755529-ee96-41aa-a39e-78dd3362ced2
 blueprint: home_page_blueprint
 title: 'Home page'
 hero:
-  image: hero-bg.jpg
+  image: modern_laboratory_testing_session_photo_with_tint_blue_color_qlfc5vhreoqcyy2s2p22_2-enhanced-(1).webp
   header: 'Make a difference. Choose customization.'
   description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
   action:
     text: 'Explore Our Services'
-    link: '#'
+    link: '#services'
 two_cols_text:
   header: 'Are you struggling to find a reliable laboratory partner that can meet your complex testing needs across the globe?'
   description: |-
@@ -21,7 +21,7 @@ two_cols_text:
 cards_with_image_on_left:
   header: 'Technology and Compliance'
   description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: photo_of_a_medical_laboratory_with_various_devices_clean_photo_without_any_mess_warm_lighting_and_w_0sm7mzyugzz2ikwazmiw_0.jpg
+  image: modern_laboratory_photo_with_tint_blue_color_83jq8wfo03mpxytxj1qp_0-enhanced-(1).webp
   cards:
     -
       id: m1ziu9o1
@@ -101,11 +101,11 @@ quote_block:
   text: 'Explore the laboratory services for clinical trials and pharmaceutical testing at LabSense. With our certified and GCLP-regulated facilities, we guarantee precision, reliability, and regulatory compliance in every analysis. Trust our experienced team to deliver timely and accurate results, empowering your drug development process.'
   action:
     text: 'Get a consultation'
-    link: '#'
+    link: '#contact-us-modal'
 image_left_with_text_on_right:
   header: 'Why choose LabSense?'
   description: null
-  image: bubles.jpg
+  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
   cards:
     -
       id: m1ziymk1
@@ -155,18 +155,18 @@ image_right_with_text_on_left:
     Our team of experienced professionals can work with you to assess your unique needs, develop a customized plan, and implement solutions tailored specifically to your lab.
 
     Whether you need new equipment, software, or workflow optimization, we have the expertise to help you achieve your goals
-  image: team_of_people_in_front_of_a_medical_laboratory_with_varius_devices_people_dressed_in_white_coats_w_7ouel3yktknghfw32duy_2.jpg
+  image: team_of_scientists_full_height_photo_with_tint_blue_color_bk2w5gs7tggbdtr5mxws_3-(1).webp
   action:
     text: 'Read more about company'
-    link: '#'
+    link: 'entry::6279181b-3007-4291-8858-5e911f6b0960'
 cta:
   header: 'Contact us today to discover how we can help your laboratory become even more successful and efficient.'
   description: 'Let us help you transform your lab and take your research to the next level.'
   image: cta-bg.jpg
   action:
     text: 'Contact us'
-    link: '#'
+    link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1728483050
+updated_at: 1730545173
 ---

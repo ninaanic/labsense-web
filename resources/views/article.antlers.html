@@ -1,0 +1,44 @@
+<div class="flex justify-center pt-24 pb-8 relative overflow-hidden rounded-b-3xl">
+
+    <div class="body-container flex flex-col gap-12 z-20">
+
+        <img src="{{ cover_image.url }}" alt="{{ cover_image.alt }}" class="w-full aspect-video object-cover rounded-2xl border border-black/15 "  style="object-position: {{ cover_image.focus_css }};">
+
+        <div class="grid grid-cols-2 lg:grid-cols-12 gap-6 pb-8">
+            <div class="col-span-2 lg:col-span-8 lg:col-start-3  flex flex-col gap-6">
+                <div class="flex justify-between items-center pb-6 border-b border-black/15">
+                    <p class="text-sm text-black/75">{{ date }}</p>
+                    <p class="text-sm text-black/75">{{ content | read_time(180) }} min to read</p>
+                </div>
+                <p class="text-xl lg:text-4xl text-nile-blue-900 leading-tight">{{ title }}</p>
+                <div class="bard lg:bard-large">
+                    {{ content }}
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-12 gap-6 pb-8">
+            <div class="col-span-2 lg:col-span-8 lg:col-start-3  flex flex-col gap-6">
+                <p class="text-2xl text-nile-blue-900">Recent posts</p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    {{ collection from="blog" paginate="3" as="posts"}}
+                        {{ posts}}
+                        <a href="{{ url }}" class="flex flex-col hover:opacity-75 duration-150">
+                            <img src="{{ cover_image.url }}" alt="{{ cover_image.alt }}" class="w-full aspect-video object-cover rounded-lg border border-black/15 " style="object-position: {{ cover_image.focus_css }};">
+                            <div class="py-4 flex flex-col gap-2">
+                                <p class="text-sm text-black/75">{{ date }}</p>
+                                <div class="w-full h-[1px] bg-black opacity-15"></div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-lg lg:text-xl text-nile-blue-900 leading-tight">{{ title }}</p>
+                                </div>
+                            </div>
+                        </a>
+                        {{ /posts}}
+                    {{ /collection }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

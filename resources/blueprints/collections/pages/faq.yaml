@@ -1,0 +1,92 @@
+title: FAQ
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: header
+            field:
+              type: text
+              display: Header
+          -
+            handle: description
+            field:
+              container: assets
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - asset
+              type: markdown
+              display: Description
+          -
+            handle: questions_and_answers
+            field:
+              type: replicator
+              display: 'Questions and answers'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: question
+                          field:
+                            type: text
+                            display: Question
+                        -
+                          handle: answer
+                          field:
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - quote
+                              - link
+                              - image
+                              - table
+                              - asset
+                            type: markdown
+                            display: Answer
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template

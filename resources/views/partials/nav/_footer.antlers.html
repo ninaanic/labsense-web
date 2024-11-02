@@ -1,0 +1,65 @@
+<div class="flex flex-col items-center justify-center gap-8 py-8 bg-nile-blue-800">
+    {{ footer }}
+        <div class="body-container grid grid-cols-2 lg:grid-cols-8 gap-6">
+            {{ main }}
+            <div class="col-span-2 lg:col-span-3 flex h-full flex-col justify-between gap-4">
+                <div class="flex flex-col gap-2">
+                    <img src="/assets/whitelogo.svg" alt="Logo" class="h-8 w-fit">
+                    <p class="text-lg text-white">{{ description }}</p>
+                </div>
+
+                <div class="dark text-sm bard">
+                    {{ additional_text }}
+                </div>
+            </div>
+            {{ /main }}
+
+            {{ sitemap }}
+                <div class="flex flex-col gap-2 col-span-2 lg:col-start-5">
+                    <p class="text-xl text-white font-semibold">
+                        {{ label }}
+                    </p>
+                    <div class="flex flex-col gap-1">
+                        {{ items }}
+                            <a href="{{ link.url }}" class="text-base text-white/75 hover:underline">{{ label }}</a>
+                        {{ /items}}
+                    </div>
+                </div>
+            {{ /sitemap }}
+
+            {{ contacts }}
+            <div class="flex flex-col gap-2 col-span-2">
+                <p class="text-xl text-white font-semibold">
+                    {{ label }}
+                </p>
+                <div class="flex flex-col gap-1">
+                    {{ items }}
+                        {{ if link }}
+                            <a href="{{ link.url }}" class="text-base text-white/75 hover:underline">{{ label }}</a>
+                        {{ else }}
+                            <p class="text-sm text-white/75">{{ label }}</p>
+                        {{ /if }}
+                    {{ /items}}
+                </div>
+            </div>
+            {{ /contacts }}
+        </div>
+        <div class="h-[1px] bg-white/15 body-container"></div>
+        {{ sub_items }}
+            <div class="body-container flex justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    {{ legals }}
+                        <a href="{{ link.url }}" class="text-base text-white hover:underline">{{ label }}</a>
+                    {{ /legals }}
+                </div>
+                <div class="flex items-center gap-2">
+                    {{ social_links }}
+                        <a href="{{ link.url }}">
+                            <img src="{{ icon.url }}" alt="{{ icon.alt }}" class="size-4">
+                        </a>
+                    {{ /social_links }}
+                </div>
+            </div>
+        {{ /sub_items }}
+    {{ /footer }}
+</div>

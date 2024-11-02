@@ -5,10 +5,10 @@ title: 'Technology and Compliance'
 hero:
   header: 'Experience unmatched laboratory efficiency'
   description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: bubles.jpg
+  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
   action:
     text: 'Contact us'
-    link: '#'
+    link: '#contact-us-modal'
 two_cols_text:
   header: 'Experience unmatched laboratory efficiency with our tailored solutions that cater to every aspect of your laboratory needs.'
   description: 'From the initial building design and construction to lab furniture and sophisticated analysis systems, we ensure that every detail is customized to enhance your workflow and productivity.'
@@ -36,13 +36,13 @@ centered_cards:
         Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs and automate the time-consuming manual process / paper work.
       type: card
       enabled: true
-  image: photo_of_a_medical_laboratory_with_various_devices_clean_photo_without_any_mess_warm_lighting_and_w_0sm7mzyugzz2ikwazmiw_0.jpg
+  image: modern_laboratory_photo_with_tint_blue_color_83jq8wfo03mpxytxj1qp_0-enhanced-(1).webp
 full_image:
   image: null
 image_left_with_text_on_right:
   header: 'Why Choose LabSense?'
   description: null
-  image: hero-bg.jpg
+  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
   cards:
     -
       id: m224eaz9
@@ -91,9 +91,9 @@ cta:
   description: 'Contact LabSense today to discuss your specific needs and discover how we can help you achieve your research and development goals. Let’s build the future of your laboratory together!'
   action:
     text: 'Get a consultation'
-    link: '#'
+    link: '#contact-us-modal'
   image: bubles.jpg
 template: service
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1728493557
+updated_at: 1730545235
 ---

@@ -5,10 +5,10 @@ title: 'QC and R&D Services'
 hero:
   header: 'QC and R&D Services'
   description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs. Our centralized laboratory network and expert team ensure timely, reliable results that keep your projects on track.'
-  image: cta-bg.jpg
+  image: man_with_a_tablet_in_hands_inside_a_modern_scince_laboratory_with_varius_devices_photo_with_tint_bl_fvalwdld6tc527shnqxk_1-enhanced-(1).webp
   action:
     text: 'Contact us'
-    link: '#'
+    link: '#contact-us-modal'
 two_cols_text:
   header: 'Streamlined Testing Services for Efficient R&D and Quality Control in Pharmaceutical Development'
   description: 'At LabSense, we simplify the testing process for your R&D and quality control needs. Our comprehensive suite of services ensures fast turnaround times, accurate results, and seamless communication, allowing you to focus on innovation while we handle the testing complexities.'
@@ -72,12 +72,13 @@ centered_cards:
       description: 'Cutting-edge dermal open flow microperfusion (dOFM) testing, an advanced solution for assessing topical drug penetration and bioequivalence. This innovative technology provides accurate pharmacokinetic data directly from the skin, eliminating the need for traditional clinical endpoint studies. Ideal for both hydrophilic and lipophilic substances, dOFM delivers precise and reliable results, accelerating the development process while reducing costs. Unlock the potential of efficient and targeted topical drug testing with dOFM.'
       type: card
       enabled: true
+  image: null
 full_image:
   image: cta-bg.jpg
 image_left_with_text_on_right:
   header: 'Why Choose LabSense?'
   description: null
-  image: bubles.jpg
+  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
   cards:
     -
       id: m2235yat
@@ -126,9 +127,9 @@ cta:
   description: 'Ready to enhance your R&D and quality control processes? Contact LabSense to discuss how our QC and R&D services can help streamline your testing needs and support your journey towards innovative pharmaceutical solutions.'
   action:
     text: 'Get a consultation'
-    link: '#'
+    link: '#contact-us-modal'
   image: cta-bg.jpg
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1728492950
+updated_at: 1730545214
 template: service
 ---

@@ -1,9 +1,21 @@
-<div class="flex justify-center pt-32 pb-8 relative overflow-hidden rounded-b-3xl">
+<div class="flex justify-center pt-24 pb-8 relative overflow-hidden rounded-b-3xl">
 
     <div class="body-container flex flex-col gap-12 z-20">
 
+        <div class="!h-[450px] w-full rounded-3xl object-cover block overflow-hidden relative">
+            <img src="{{ data.image.url }}" alt="{{ data.image.alt }}" class="absolute left-0 top-0 h-full w-full object-cover"/>
+            <img src="{{ data.image.url }}" alt="{{ data.image.alt }}" class="absolute left-0 top-0 h-full w-full object-cover blur-xl" style="clip-path: url(#hero_clip_path);"/>
+
+            <!-- SVG defining the clip path, anchored to the right -->
+            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-0 top-0 h-full object-cover object-right">
+                <clipPath id="hero_clip_path" class=" translate-x-[25%] lg:translate-x-[60%]">
+                    <path  style="transform: scale(0.6);" d="M435 0C431.686 0 429 2.68629 429 6V214.5C429 332.912 332.912 429 214.5 429H6C2.6863 429 0 431.686 0 435V852C0 855.314 2.68629 858 6 858H423C426.314 858 429 855.314 429 852V643.5C429 525.088 525.088 429 643.5 429H852C855.314 429 858 426.314 858 423V5.99999C858 2.68628 855.314 0 852 0H435ZM214.5 819.662C117.441 819.662 38.3382 740.559 38.3382 643.5C38.3382 546.441 117.441 467.338 214.5 467.338C311.559 467.338 390.662 546.441 390.662 643.5C390.662 740.559 311.559 819.662 214.5 819.662ZM643.5 390.662C546.441 390.662 467.338 311.559 467.338 214.5C467.338 117.441 546.441 38.3383 643.5 38.3383C740.559 38.3383 819.662 117.441 819.662 214.5C819.662 311.559 740.559 390.662 643.5 390.662Z" fill="black"/>
+                </clipPath>
+            </svg>
+        </div>
+
         <div class="grid grid-cols-2 lg:grid-cols-12 gap-4 items-end ">
-            <h1 class="text-nile-blue-800 text-7xl col-span-2 lg:col-span-6">{{ data.header }}</h1>
+            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl col-span-2 lg:col-span-6">{{ data.header }}</h1>
 
             <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9">
                 <div class="bard-large">{{ data.description }}</div>
@@ -13,8 +25,6 @@
                 {{ /partial:misc/button }}
             </div>
         </div>
-
-        <img src="{{ data.image.url }}" alt="{{ data.image.alt }}" class="!h-[400px] w-full rounded-3xl object-cover block"/>
 
     </div>
 </div>

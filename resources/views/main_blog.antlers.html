@@ -1,0 +1,106 @@
+<div class="flex justify-center pt-24 pb-8 relative overflow-hidden rounded-b-3xl">
+
+    <div class="body-container flex flex-col gap-12 z-20">
+
+        <div class="grid grid-cols-2 lg:grid-cols-12 gap-4 items-end ">
+            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl col-span-2 lg:col-span-6">{{ header }}</h1>
+
+            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9 bard-large">
+                {{ description }}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="flex justify-center py-8 lg:py-14">
+    <div class="body-container grid grid-cols-2 lg:grid-cols-6 gap-6">
+        
+        <div class="flex flex-col gap-6 col-span-2 lg:col-span-4 lg:col-start-2 ">
+        {{ collection from="blog" paginate="9" as="posts" }}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {{ posts }}
+                    {{ if index == 0 }}
+                        <div class="flex flex-col lg:col-span-2">
+                            <img src="{{ cover_image.url }}" alt="{{ cover_image.alt }}" class="w-full aspect-video object-cover rounded-2xl border border-black/15 "  style="object-position: {{ cover_image.focus_css }};">
+                            <div class="lg:p-6 flex flex-col gap-4">
+                                <p class="text-sm text-black/75">{{ date }}</p>
+                                <div class="w-full h-[1px] bg-black opacity-15"></div>
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-xl lg:text-3xl text-nile-blue-900 leading-tight">{{ title }}</p>
+                                    <div class="bard-large">{{ content | safe_truncate(128, '...') }}</div>
+                                    <a href="{{ url }}" class="text-base text-nile-blue-500 hover:underline">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    {{ else }}
+                        <a href="{{ url }}" class="flex flex-col hover:opacity-75 duration-150">
+                            <img src="{{ cover_image.url }}" alt="{{ cover_image.alt }}" class="w-full aspect-video object-cover rounded-lg border border-black/15 "  style="object-position: {{ cover_image.focus_css }};">
+                            <div class="py-4 flex flex-col gap-2">
+                                <p class="text-sm text-black/75">{{ date }}</p>
+                                <div class="w-full h-[1px] bg-black opacity-15"></div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-lg lg:text-xl text-nile-blue-900 leading-tight">{{ title }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    {{ /if }}
+                {{ /posts }}
+            </div>
+
+            {{ paginate }}
+                <ul class="flex justify-center gap-2 items-center">
+                    {{ if prev_page }}
+                        <li><a href="{{ prev_page }}" class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md">&laquo;</a></li>
+                    {{ else }}
+                        <li class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md opacity-50"><span>&laquo;</span></li>
+                    {{ /if }}
+            
+                        {{ links:segments }}
+                
+                            {{ first }}
+                                {{ if page == current_page }}
+                                    <li class="!size-8 text-sm flex items-center justify-center bg-nile-blue-500 rounded-md text-white"><span>{{ page }}</span></li>
+                                {{ else }}
+                                    <li><a href="{{ url }}" class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md">{{ page }}</a></li>
+                                {{ /if }}
+                            {{ /first }}
+                
+                            {{ if slider }}
+                                <li class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md"><span>...</span></li>
+                            {{ /if }}
+                
+                            {{ slider }}
+                                {{ if page == current_page }}
+                                    <li class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md"><span>{{ page }}</span></li>
+                                {{ else }}
+                                    <li class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md"><a href="{{ url }}">{{ page }}</a></li>
+                                {{ /if }}
+                            {{ /slider }}
+                
+                            {{ if slider || (!slider && last) }}
+                                <li class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md"><span>...</span></li>
+                            {{ /if }}
+                
+                            {{ last }}
+                                {{ if page == current_page }}
+                                    <li  class="!size-8 text-sm flex items-center justify-center bg-nile-blue-500 rounded-md text-white"><span>{{ page }}</span></li>
+                                {{ else }}
+                                    <li><a href="{{ url }}" class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md">{{ page }}</a></li>
+                                {{ /if }}
+                            {{ /last }}
+                
+                        {{ /links:segments }}
+            
+                    {{ if next_page }}
+                        <li ><a href="{{ next_page }}" class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md">&raquo;</a></li>
+                    {{ else }}
+                        <li class="!size-8 text-sm flex items-center justify-center bg-slate-200 rounded-md opacity-50"><span>&raquo;</span></li>
+                    {{ /if }}
+                </ul>
+            {{ /paginate }}
+
+        {{ /collection }}
+        </div>
+    </div>
+</div>

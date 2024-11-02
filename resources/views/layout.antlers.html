@@ -15,10 +15,14 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body class="bg-nile-blue-50">
-        <div class="flex flex-col relative">
+        <div class="flex flex-col relative hidden" x-data x-init="$el.classList.remove('hidden')">
             {{ partial:nav/header }}
 
             {{ template_content }}
+
+            {{ partial:nav/footer }}
+
+            {{ partial:contact_us_modal }}
         </div>
     </body>
 </html>

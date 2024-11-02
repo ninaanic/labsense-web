@@ -5,23 +5,21 @@ data:
       id: m21zzogi
       action:
         text: '+385 91 3567 932'
-        link: '#'
+        link: 'tel:385913567932'
       show_icon: true
       icon:
         - phone.svg
       style: outline
       type: card
       enabled: true
-      image:
-        - phone.svg
+      image: phone.svg
     -
       id: m2200ei3
       action:
         text: 'Request pricing'
-        link: '#'
+        link: '#contact-us-modal'
       show_icon: true
       style: primary
       type: card
       enabled: true
-      image:
-        - arrow.svg
+      image: arrow.svg

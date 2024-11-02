@@ -1,0 +1,37 @@
+<div class="flex justify-center pt-24 pb-8 relative overflow-hidden rounded-b-3xl min-h-[650px]">
+
+    <div class="body-container grid grid-cols-2 lg:grid-cols-6 gap-6">
+
+        <div class="col-span-2 lg:col-span-4 lg:col-start-2 flex flex-col gap-6">
+            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl ">{{ header }}</h1>
+            <div class="bard-large">{{ description }}</div>
+
+            <div x-data="{ 
+                activeAccordion: '', 
+                setActiveAccordion(id) { 
+                    this.activeAccordion = (this.activeAccordion == id) ? '' : id 
+                } 
+            }" class="relative w-full">
+
+            {{ questions_and_answers }}
+                <div x-data="{ id: $id('accordion') }" class="group">
+                    <button @click="setActiveAccordion(id)" class="cursor-pointer flex items-center justify-between w-full p-4 pb-3 text-left select-none text-lg lg:text-xl text-nile-blue-800 border-b border-black/15">
+                        <div class="flex items-center gap-4">
+                            <div class="size-6 rounded bg-nile-blue-100 flex items-center justify-center text-lg text-nile-blue-800">{{ index + 1 }}</div>
+                            <span>{{ question }}</span>
+                        </div>
+                        <svg class="!size-5 duration-300 ease-out" :class="{ '-rotate-[45deg]': activeAccordion==id }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" /></svg>
+                    </button>
+                    <div x-show="activeAccordion==id" x-collapse x-cloak>
+                        <div class="p-4 pt-6 bard">
+                            {{ answer }}
+                        </div>
+                    </div>
+                </div>
+            {{ /questions_and_answers }}
+
+            </div>
+        </div>
+
+    </div>
+</div>

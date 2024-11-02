@@ -1,0 +1,116 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: main
+            field:
+              type: group
+              display: Main
+              fields:
+                -
+                  handle: description
+                  field:
+                    type: text
+                    display: Description
+                -
+                  handle: additional_text
+                  field:
+                    type: markdown
+                    display: 'Additional text'
+          -
+            handle: sitemap
+            field:
+              type: group
+              display: Sitemap
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: items
+                  field:
+                    type: grid
+                    display: Items
+                    fields:
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: contacts
+            field:
+              type: group
+              display: Contacts
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: items
+                  field:
+                    type: grid
+                    display: Items
+                    fields:
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: sub_items
+            field:
+              type: group
+              display: 'Sub items'
+              fields:
+                -
+                  handle: legals
+                  field:
+                    type: grid
+                    display: Legals
+                    fields:
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                -
+                  handle: social_links
+                  field:
+                    type: grid
+                    display: 'Social links'
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          max_files: 1
+                          container: assets
+                          type: assets
+                          display: Icon
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link

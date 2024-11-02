@@ -1,0 +1,291 @@
+title: 'About us'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero
+            field:
+              type: group
+              display: Hero
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: two_columns
+            field:
+              type: group
+              display: 'Two columns'
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+          -
+            handle: cards_section
+            field:
+              type: group
+              display: 'Cards section'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: cards
+                  field:
+                    type: replicator
+                    display: Cards
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card:
+                            display: Card
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  min_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon
+                              -
+                                handle: header
+                                field:
+                                  type: text
+                                  display: Header
+                              -
+                                handle: description
+                                field:
+                                  type: markdown
+                                  display: Description
+          -
+            handle: quote
+            field:
+              type: group
+              display: Quote
+              fields:
+                -
+                  handle: text
+                  field:
+                    type: textarea
+                    display: Text
+                -
+                  handle: action
+                  field:
+                    type: group
+                    display: Action
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          type: text
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: certifications
+            field:
+              type: group
+              display: Certifications
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: certificate
+                  field:
+                    type: grid
+                    display: Certificate
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          max_files: 1
+                          container: assets
+                          type: assets
+                          display: Icon
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                -
+                  handle: helper_text
+                  field:
+                    type: text
+                    display: 'Helper text'
+          -
+            handle: contact_us
+            field:
+              type: group
+              display: 'Contact us'
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: contacts
+                  field:
+                    type: grid
+                    display: Contacts
+                    mode: stacked
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          max_files: 1
+                          container: assets
+                          type: assets
+                          display: Icon
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                -
+                  handle: contact_us_form
+                  field:
+                    max_items: 1
+                    type: form
+                    display: 'Contact us form'
+          -
+            handle: careers
+            field:
+              type: group
+              display: Careers
+              fields:
+                -
+                  handle: header
+                  field:
+                    type: text
+                    display: Header
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                -
+                  handle: advantages
+                  field:
+                    type: grid
+                    display: Advantages
+                    fields:
+                      -
+                        handle: header
+                        field:
+                          type: text
+                          display: Header
+                      -
+                        handle: description
+                        field:
+                          type: markdown
+                          display: Description
+                -
+                  handle: careers_form
+                  field:
+                    max_items: 1
+                    type: form
+                    display: 'Careers form'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template

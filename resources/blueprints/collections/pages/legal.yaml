@@ -1,0 +1,90 @@
+title: Legal
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: certificates_toggle
+            field:
+              type: toggle
+              display: 'Certificates toggle'
+          -
+            handle: certifications
+            field:
+              type: group
+              display: Certifications
+              if:
+                certificates_toggle: 'equals true'
+              fields:
+                -
+                  handle: helper_text
+                  field:
+                    type: text
+                    display: 'Helper text'
+                -
+                  handle: items
+                  field:
+                    type: grid
+                    display: Items
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          max_files: 1
+                          container: assets
+                          type: assets
+                          display: Icon
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+          -
+            handle: content
+            field:
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - asset
+              type: markdown
+              display: Content
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
