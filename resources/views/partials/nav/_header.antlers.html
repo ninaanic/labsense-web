@@ -86,20 +86,19 @@ else{
         <div class="py-4 border-y border-black/15 flex flex-col gap-1">
             {{ nav:hero_navigation }}
                 <div>
-                    <a href="{{ url }}" class="text-black/75 hover:bg-black/5  text-base leading-none font-medium flex gap-3 items-center px-3 py-2 rounded-md justify-between">
-                        {{ title }}
-                        {{ if children }}
-                            <img src="/assets/chevrondown.svg" alt="Chevron" class="invert opacity-75"/>
-                        {{ /if }}
-                    </a>
-
                     {{ if children }}
-                        <div class="flex flex-col gap-0 p-3 rounded-md bg-black/5 border border-black/15">
+                        <div class="flex flex-col gap-0 p-3 rounded-md bg-nile-blue-100/25">
+                            <p class=" capitalize text-xs text-nile-blue-800 tracking-wide">{{ title }}</p>
                             {{ children }}
-                                <a href="{{ url }}" class="text-base leading-none font-medium flex gap-3 items-center px-3 py-2 rounded-md text-black/75 hover:bg-black/5 ">{{ title }}</a>
+                                <a href="{{ url }}" class="text-base leading-none font-medium flex gap-3 items-center py-2 rounded-md text-black/75 ">{{ title }}</a>
                             {{ /children }}
                         </div>
+                    {{ else }}
+                        <a href="{{ url }}" class="text-black/75 hover:bg-black/5  text-base leading-none font-medium flex gap-3 items-center px-4 py-2 rounded-md justify-between">
+                            {{ title }}
+                        </a>
                     {{ /if }}
+
                 </div>
             {{ /nav:hero_navigation }}
         </div>

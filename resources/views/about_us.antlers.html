@@ -26,7 +26,7 @@
 
     <div class="body-container grid grid-cols-1 lg:grid-cols-2 gap-4">
 
-        <img src="{{ image.url }}" alt="{{ image.alt }}" class="min-h-[350px] rounded-2xl">
+        <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo min-h-[350px] rounded-2xl">
 
         <div class="flex flex-col justify-between gap-4 p-6 rounded-2xl bg-white min-h-[350px]">
             <p class=" text-sm text-nile-blue-800">{{ header }}</p>
@@ -46,7 +46,7 @@
 
 {{ certifications }}
 <div class="flex justify-center py-14 lg:py-20 relative">
-    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-4 items-center">
+    <div class="body-container grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
 
         <div class="flex flex-col gap-6 lg:gap-8 col-span-1 lg:col-span-5">
             <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal ">{{ header }}</p>
@@ -127,7 +127,7 @@
                 <!-- Phone Number -->
                 <div>
                     <label for="phone_number" class="block">Phone Number</label>
-                    <input type="tel" id="phone_number" x-model="form.phone_number" class="w-full p-2 border rounded"
+                    <input x-mask="+999 99 9999 999" type="tel" id="phone_number" x-model="form.phone_number" class="w-full p-2 border rounded"
                         placeholder="Enter your phone number" required />
                 </div>
 
