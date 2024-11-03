@@ -5,7 +5,7 @@ title: 'Technology and Compliance'
 hero:
   header: 'Experience unmatched laboratory efficiency'
   description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
+  image: experience_unmatched_laboratory_efficiency_photo_with_tint_blue_color_rx8ss8k3aqnafkfbfrbl_0-enhanced-min.webp
   action:
     text: 'Contact us'
     link: '#contact-us-modal'
@@ -95,7 +95,7 @@ cta:
   image: bubles.jpg
 template: service
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730632835
+updated_at: 1730661073
 alt_seo_meta_title: 'Technology and Compliance'
 alt_seo_meta_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
 alt_seo_noindex: false

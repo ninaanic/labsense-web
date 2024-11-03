@@ -57,22 +57,22 @@ contact_us:
   contacts:
     -
       id: m2z1ky1v
-      label: '+385 95 9999 999'
-      link: 'tel:385959999999'
-      icon: mdi_cube-send.svg
+      label: '+385 91 3567 932'
+      link: 'tel:385913567932'
+      icon: material-symbols_phone-enabled-outline-sharp.svg
     -
       id: m2z1l88s
       label: 'OIB: 29765016403'
-      icon: mdi_cube-send.svg
+      icon: material-symbols_document-scanner-outline.svg
     -
       id: m2z1lbjg
       label: 'Borongajska cesta 83H, 10000 Zagreb'
-      icon: mdi_cube-send.svg
+      icon: material-symbols_location-on-outline.svg
     -
       id: m2z1le2c
-      label: mail@domain.com
-      link: 'mailto:mail@domain.com'
-      icon: mdi_cube-send.svg
+      label: info@labsense.hr
+      link: 'mailto:info@labsense.hr'
+      icon: material-symbols_alternate-email.svg
   contact_us_form: contact_us
 careers:
   header: Careers
@@ -89,7 +89,7 @@ careers:
   careers_form: careers
 template_field: about_us
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730632936
+updated_at: 1730660998
 template: about_us
 alt_seo_meta_title: 'About LabSense'
 alt_seo_meta_description: 'Lab-Sense makes it easy to streamline your laboratory processes, improve compliance, and boost efficiency. In minutes, not months.'

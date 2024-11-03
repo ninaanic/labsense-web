@@ -155,7 +155,7 @@ image_right_with_text_on_left:
     Our team of experienced professionals can work with you to assess your unique needs, develop a customized plan, and implement solutions tailored specifically to your lab.
 
     Whether you need new equipment, software, or workflow optimization, we have the expertise to help you achieve your goals
-  image: team_of_scientists_full_height_photo_with_tint_blue_color_bk2w5gs7tggbdtr5mxws_3-(1).webp
+  image: back_of_a_man_with_a_tablet_in_hands_inside_a_modern_scince_laboratory_with_varius_devices_photo_wi_rwoa0ewvfz9wyrce5ljt_2-min.webp
   action:
     text: 'Read more about company'
     link: 'entry::6279181b-3007-4291-8858-5e911f6b0960'
@@ -168,7 +168,7 @@ cta:
     link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730632545
+updated_at: 1730660572
 alt_seo_meta_title: 'Home page | LabSense'
 alt_seo_meta_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
 alt_seo_noindex: false

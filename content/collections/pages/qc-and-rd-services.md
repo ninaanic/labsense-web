@@ -74,7 +74,7 @@ centered_cards:
       enabled: true
   image: null
 full_image:
-  image: cta-bg.jpg
+  image: streamlined_testing_services_for_laboratory_efficiency_photo_with_tint_blue_color_3v445s0xvv86w9f0cnd4_3-enhanced-min.webp
 image_left_with_text_on_right:
   header: 'Why Choose LabSense?'
   description: null
@@ -130,7 +130,7 @@ cta:
     link: '#contact-us-modal'
   image: cta-bg.jpg
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730632731
+updated_at: 1730661315
 template: service
 alt_seo_meta_title: 'QC and R&D Services'
 alt_seo_meta_description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs. Our centralized laboratory network and expert team ensure reliable results that keep your projects on track.'

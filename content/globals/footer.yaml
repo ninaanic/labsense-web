@@ -2,7 +2,7 @@ title: Footer
 data:
   main:
     description: 'Transform your lab with custom-designed solutions and expert consulting'
-    additional_text: 'Some text like designed and developed by Amelo Design'
+    additional_text: 'Designed and developed by [Amelo Design](http://amelodesign.com/)'
   sitemap:
     label: Sitemap
     items:
@@ -73,3 +73,4 @@ data:
       -
         id: m2yxn9fo
         icon: LinkedIn.svg
+        link: 'https://www.linkedin.com/company/labsense-eu'

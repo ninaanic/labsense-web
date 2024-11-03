@@ -7,7 +7,11 @@ certifications:
   helper_text: null
   items: {  }
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730630941
+updated_at: 1730659743
+template: legal
+alt_seo_noindex: false
+alt_seo_nofollow: false
+exclude_from_sitemap: false
 ---
 Welcome to LabSense website. This Privacy Statement explains what information we collect from you when you visit our website and how we use that information.
 
