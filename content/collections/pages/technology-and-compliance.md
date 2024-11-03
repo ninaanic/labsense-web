@@ -18,7 +18,7 @@ centered_cards:
   cards:
     -
       id: m224cko8
-      icon: mdi_cube-send.svg
+      icon: mdi_test-tube.svg
       header: 'Custom-design solutions for laboratory planning'
       description: |-
         We offer a unique combination of chemical engineering expertise and creativity to provide our clients with customized solutions that meet their specific requirements in terms of hardware and software solutions.
@@ -46,35 +46,35 @@ image_left_with_text_on_right:
   cards:
     -
       id: m224eaz9
-      icon: mdi_cube-send.svg
+      icon: mdi_magnify.svg
       header: 'Global Reach'
       description: 'Our network of experts and laboratories extends our reach, providing you with access to specialized services and resources worldwide.'
       type: card
       enabled: true
     -
       id: m224en39
-      icon: mdi_cube-send.svg
+      icon: mdi_microscope.svg
       header: 'Expertise and Experience'
       description: 'Our team of highly qualified scientists brings years of experience in pharmaceutical analysis and clinical trials.'
       type: card
       enabled: true
     -
       id: m224eudh
-      icon: mdi_cube-send.svg
+      icon: mdi_desktop-classic.svg
       header: 'State-of-the-Art Equipment'
       description: 'We invest in the latest analytical technologies to ensure the highest accuracy and precision in our results.'
       type: card
       enabled: true
     -
       id: m224f1t1
-      icon: mdi_cube-send.svg
+      icon: mdi_test-tube.svg
       header: 'Customized Solutions'
       description: 'We work closely with our clients to understand their specific needs and provide tailored solutions.'
       type: card
       enabled: true
     -
       id: m224f9u5
-      icon: mdi_cube-send.svg
+      icon: mdi_developer-board.svg
       header: 'Quality and Compliance'
       description: 'We adhere to strict quality standards and regulatory requirements to guarantee the reliability of our services.'
       type: card
@@ -95,5 +95,12 @@ cta:
   image: bubles.jpg
 template: service
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730545235
+updated_at: 1730632835
+alt_seo_meta_title: 'Technology and Compliance'
+alt_seo_meta_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
+alt_seo_noindex: false
+alt_seo_nofollow: false
+alt_seo_social_title: 'Technology and Compliance'
+alt_seo_social_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
+exclude_from_sitemap: false
 ---

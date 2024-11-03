@@ -18,14 +18,14 @@ cards_section:
   cards:
     -
       id: m2z1izn8
-      icon: mdi_cube-send.svg
+      icon: mdi_microscope.svg
       header: 'Being radically open'
       description: "We believe there's no room for big egos and there's always time to help each other. We strive to give and receive feedback, ideas, and perspectives."
       type: card
       enabled: true
     -
       id: m2z1je1o
-      icon: mdi_cube-send.svg
+      icon: mdi_magnify.svg
       header: 'Moving the needle'
       description: 'Boldly, bravely, and with clear aims. We seek out the big opportunities and double down on the most important things to work on.'
       type: card
@@ -89,6 +89,13 @@ careers:
   careers_form: careers
 template_field: about_us
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730545358
+updated_at: 1730632936
 template: about_us
+alt_seo_meta_title: 'About LabSense'
+alt_seo_meta_description: 'Lab-Sense makes it easy to streamline your laboratory processes, improve compliance, and boost efficiency. In minutes, not months.'
+alt_seo_noindex: false
+alt_seo_nofollow: false
+alt_seo_social_title: 'About LabSense'
+alt_seo_social_description: 'Lab-Sense makes it easy to streamline your laboratory processes, improve compliance, and boost efficiency. In minutes, not months.'
+exclude_from_sitemap: false
 ---

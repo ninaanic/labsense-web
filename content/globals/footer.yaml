@@ -55,7 +55,20 @@ data:
           -
             id: m2yxmfg4
             label: 'Future legal page'
-        label: 'Future legal page'
+        label: 'Cookie Policy'
+        link: 'entry::0c23f9f2-d0a4-47ea-ad00-c6790a7525db'
+      -
+        id: m31hl09b
+        label: 'Privacy Statement'
+        link: 'entry::81582151-2091-4bfb-9918-df60792fcd4f'
+      -
+        id: m31hlanq
+        label: 'Quality Policy Statement'
+        link: 'entry::37a72480-390a-4fb3-a8ce-f9888e443018'
+      -
+        id: m31hljv2
+        label: 'Terms of Use'
+        link: 'entry::39a7c0b5-27fa-4db8-b59d-271a37122f4a'
     social_links:
       -
         id: m2yxn9fo

@@ -2,3 +2,7 @@ super: true
 name: Admin
 id: a37fb727-41af-4015-8baf-8a2cba739a58
 password_hash: $2y$12$rQrlmQ516TT7VKhNJ13XkOPPb76sPnbXlg.M18s4Ne8g.Ey46A7Mq
+preferences:
+  assets:
+    assets:
+      mode: grid

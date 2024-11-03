@@ -18,42 +18,42 @@ centered_cards:
   cards:
     -
       id: m22337xq
-      icon: mdi_cube-send.svg
+      icon: mdi_magnify.svg
       header: 'Analytical method development and validation'
       description: 'Ensure product quality and regulatory compliance with robust early-stage analytical method development and validation for finished products, active substances and excipients.'
       type: card
       enabled: true
     -
       id: m2233oz9
-      icon: mdi_cube-send.svg
+      icon: mdi_developer-board.svg
       header: 'Reversed engineering'
       description: 'Deconstruction and analysis of proprietary drugs to identify and quantify their components and manufacturing methods, facilitating the development of competitive generic equivalents.'
       type: card
       enabled: true
     -
       id: m2233xct
-      icon: mdi_cube-send.svg
+      icon: mdi_test-tube.svg
       header: 'Rapid Raw Material and Excipient Testing'
       description: 'Ensure product quality with our comprehensive testing services. We help you meet regulatory standards, identify potential issues, optimize sourcing, and reduce costs.'
       type: card
       enabled: true
     -
       id: m22345rg
-      icon: mdi_cube-send.svg
+      icon: mdi_microscope.svg
       header: 'Analytical Testing in Clinical Trials and BA/BE Studies'
       description: 'Ensuring Data Integrity and Regulatory Compliance LabSense offers comprehensive analytical testing services for clinical trials and BA/BE studies, adhering to GCLP standards. Our services include method development, bioanalysis, pharmacokinetic studies, stability testing, and quality control.'
       type: card
       enabled: true
     -
       id: m2234e25
-      icon: mdi_cube-send.svg
+      icon: mdi_medication-outline.svg
       header: 'Rheology: A Key to Pharmaceutical Formulation'
       description: 'Rheological analysis, using instruments like viscometers, is essential for optimizing drug formulations. It helps ensure product quality, consistency, and effective drug delivery.'
       type: card
       enabled: true
     -
       id: m2234m7p
-      icon: mdi_cube-send.svg
+      icon: mdi_google-analytics.svg
       header: 'IVPT of Topical Dosage Forms'
       description: 'In-vitro permeation testing to evaluate drug delivery into the various skin/eye layers and to select formulations for topical and transdermal application. To assess medication transport into the different layers and choose formulations for topical and transdermal use, in-vitro permeation testing is used.'
       type: card
@@ -67,7 +67,7 @@ centered_cards:
       enabled: true
     -
       id: m2235119
-      icon: mdi_cube-send.svg
+      icon: mdi_desktop-classic.svg
       header: 'Innovative Microperfusion Testing for Topical Drugs – Precision and Efficiency in Development'
       description: 'Cutting-edge dermal open flow microperfusion (dOFM) testing, an advanced solution for assessing topical drug penetration and bioequivalence. This innovative technology provides accurate pharmacokinetic data directly from the skin, eliminating the need for traditional clinical endpoint studies. Ideal for both hydrophilic and lipophilic substances, dOFM delivers precise and reliable results, accelerating the development process while reducing costs. Unlock the potential of efficient and targeted topical drug testing with dOFM.'
       type: card
@@ -82,35 +82,35 @@ image_left_with_text_on_right:
   cards:
     -
       id: m2235yat
-      icon: mdi_cube-send.svg
+      icon: mdi_magnify.svg
       header: 'Global Reach'
       description: 'Our network of experts and laboratories extends our reach, providing you with access to specialized services and resources worldwide.'
       type: card
       enabled: true
     -
       id: m2236fel
-      icon: mdi_cube-send.svg
+      icon: mdi_microscope.svg
       header: 'Expertise and Experience'
       description: 'Our team of highly qualified scientists brings years of experience in pharmaceutical analysis and clinical trials.'
       type: card
       enabled: true
     -
       id: m2236mx9
-      icon: mdi_cube-send.svg
+      icon: mdi_desktop-classic.svg
       header: 'State-of-the-Art Equipment'
       description: 'We invest in the latest analytical technologies to ensure the highest accuracy and precision in our results.'
       type: card
       enabled: true
     -
       id: m2236y51
-      icon: mdi_cube-send.svg
+      icon: mdi_test-tube.svg
       header: 'Customized Solutions'
       description: 'We work closely with our clients to understand their specific needs and provide tailored solutions.'
       type: card
       enabled: true
     -
       id: m22376xh
-      icon: mdi_cube-send.svg
+      icon: mdi_developer-board.svg
       header: 'Quality and Compliance'
       description: 'We adhere to strict quality standards and regulatory requirements to guarantee the reliability of our services.'
       type: card
@@ -130,6 +130,14 @@ cta:
     link: '#contact-us-modal'
   image: cta-bg.jpg
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730545214
+updated_at: 1730632731
 template: service
+alt_seo_meta_title: 'QC and R&D Services'
+alt_seo_meta_description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs. Our centralized laboratory network and expert team ensure reliable results that keep your projects on track.'
+alt_seo_noindex: false
+alt_seo_nofollow: false
+alt_seo_social_title: 'QC and R&D Services'
+alt_seo_social_description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs. Our centralized laboratory network and expert team ensure reliable results that keep your projects on track.'
+alt_seo_social_image: man_with_a_tablet_in_hands_inside_a_modern_scince_laboratory_with_varius_devices_photo_with_tint_bl_fvalwdld6tc527shnqxk_1-enhanced-(1).webp
+exclude_from_sitemap: false
 ---

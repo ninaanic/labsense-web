@@ -47,12 +47,13 @@
         <div class="h-[1px] bg-white/15 body-container"></div>
         {{ sub_items }}
             <div class="body-container flex justify-between items-center gap-6">
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
                     {{ legals }}
                         <a href="{{ link.url }}" class="text-base text-white hover:underline">{{ label }}</a>
                     {{ /legals }}
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                    <button onclick="{{ AltCookies:reset }}" class="btn btn-outline">Cookie Preferences</button>
                     {{ social_links }}
                         <a href="{{ link.url }}">
                             <img src="{{ icon.url }}" alt="{{ icon.alt }}" class="size-4">

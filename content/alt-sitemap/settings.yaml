@@ -1,0 +1,14 @@
+default_collection_priorities:
+  -
+    id: m31hnhhz
+    collection: pages
+    priority: 1.0
+    type: collection_priority
+    enabled: true
+  -
+    id: m31hnllz
+    collection: blog
+    priority: 0.5
+    type: collection_priority
+    enabled: true
+exclude_collections_from_sitemap: null

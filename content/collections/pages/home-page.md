@@ -113,35 +113,35 @@ image_left_with_text_on_right:
       description: 'Our network of experts and laboratories extends our reach, providing you with access to specialized services and resources worldwide.'
       type: card
       enabled: true
-      icon: mdi_cube-send.svg
+      icon: mdi_magnify.svg
     -
       id: m1ziyyf5
       header: 'Expertise and Experience'
       description: 'Our team of highly qualified scientists brings years of experience in pharmaceutical analysis and clinical trials.'
       type: card
       enabled: true
-      icon: mdi_cube-send.svg
+      icon: mdi_microscope.svg
     -
       id: m1ziz5sy
       header: 'State-of-the-Art Equipment'
       description: 'We invest in the latest analytical technologies to ensure the highest accuracy and precision in our results.'
       type: card
       enabled: true
-      icon: mdi_cube-send.svg
+      icon: mdi_desktop-classic.svg
     -
       id: m1zizeeh
       header: 'Customized Solutions'
       description: 'We work closely with our clients to understand their specific needs and provide tailored solutions.'
       type: card
       enabled: true
-      icon: mdi_cube-send.svg
+      icon: mdi_test-tube.svg
     -
       id: m1zizr61
       header: 'Quality and Compliance'
       description: 'We adhere to strict quality standards and regulatory requirements to guarantee the reliability of our services.'
       type: card
       enabled: true
-      icon: mdi_cube-send.svg
+      icon: mdi_developer-board.svg
     -
       id: m1zizzft
       header: 'Timely Delivery'
@@ -168,5 +168,13 @@ cta:
     link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730545173
+updated_at: 1730632545
+alt_seo_meta_title: 'Home page | LabSense'
+alt_seo_meta_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
+alt_seo_noindex: false
+alt_seo_nofollow: false
+alt_seo_social_title: 'Home page | LabSense'
+alt_seo_social_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
+alt_seo_social_image: modern_laboratory_testing_session_photo_with_tint_blue_color_qlfc5vhreoqcyy2s2p22_2-enhanced-(1).webp
+exclude_from_sitemap: false
 ---
