@@ -1,11 +1,21 @@
 <div class="flex justify-center py-16 relative overflow-hidden rounded-b-3xl" data-dark-hero>
 
     <!-- Original background image -->
-    <img src="{{ data.image.url }}" alt="bg-image" class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">
-    
-    <!-- Blurred image with clip path applied -->
-    <img src="{{ data.image.url }}" alt="bg-blured-image" class="absolute left-0 top-0 w-full h-full object-cover blur-xl" style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
-    
+    {{ if data.image.is_video }}
+        <video autoplay muted loop  class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">
+            <source src="{{ data.image.url }}" type="video/webm">
+        </video>
+
+        <video autoplay muted loop  class="absolute left-0 top-0 w-full h-full object-cover blur-lg " style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
+            <source src="{{ data.image.url }}" type="video/webm">
+        </video>
+    {{ else }}
+        <img src="{{ data.image.url }}" alt="bg-image" class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">
+        
+        <!-- Blurred image with clip path applied -->
+        <img src="{{ data.image.url }}" alt="bg-blured-image" class="absolute left-0 top-0 w-full h-full object-cover blur-xl" style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
+    {{ /if }}
+
     <!-- SVG defining the clip path, anchored to the right -->
     <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-0 top-0 h-full">
         <clipPath id="hero_clip_path" style="transform: translateX(60%);">
@@ -16,9 +26,9 @@
     <div class=" bg-gradient-to-t from-black via-black/25 to-transparent absolute left-0 top-0 w-full h-full"></div>
 
     <div class="body-container min-h-[650px] lg:min-h-[750px] py-8 lg:py-16 flex flex-col justify-end lg:grid grid-cols-2 lg:grid-cols-12 gap-4 items-end z-20">
-        <h1 class="text-white text-5xl lg:text-7xl col-span-2 lg:col-span-6">{{ data.header }}</h1>
+        <h1 class="text-white text-5xl lg:text-7xl col-span-2 lg:col-span-6" split animate>{{ data.header }}</h1>
 
-        <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9">
+        <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9" slide-up data-delay="0.3">
             <div class="dark bard-large">{{ data.description }}</div>
 
             {{ partial:misc/button :data="data.action" }}

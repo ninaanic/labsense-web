@@ -15,7 +15,7 @@
 
             {{ questions_and_answers }}
                 <div x-data="{ id: $id('accordion') }" class="group">
-                    <button @click="setActiveAccordion(id)" class="cursor-pointer flex items-center justify-between w-full p-4 pb-3 text-left select-none text-lg lg:text-xl text-nile-blue-800 border-b border-black/15">
+                    <button @click="setActiveAccordion(id)" class="cursor-pointer flex items-center justify-between w-full p-4 pb-3 text-left select-none text-lg lg:text-xl text-nile-blue-800 bg-transparent hover:bg-nile-blue-100 rounded-xl duration-300">
                         <div class="flex items-center gap-4">
                             <div class="size-6 rounded bg-nile-blue-100 flex items-center justify-center text-lg text-nile-blue-800">{{ index + 1 }}</div>
                             <span>{{ question }}</span>

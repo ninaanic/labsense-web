@@ -5,7 +5,7 @@ title: 'QC and R&D Services'
 hero:
   header: 'QC and R&D Services'
   description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs. Our centralized laboratory network and expert team ensure timely, reliable results that keep your projects on track.'
-  image: man_with_a_tablet_in_hands_inside_a_modern_scince_laboratory_with_varius_devices_photo_with_tint_bl_fvalwdld6tc527shnqxk_1-enhanced-(1).webp
+  image: a_scintiest_with_a_tablet_in_modern_laboratory_colorful_neutral_light_124q6qf14oua8okuld23_3-enhanced-(1).webp
   action:
     text: 'Contact us'
     link: '#contact-us-modal'
@@ -74,11 +74,11 @@ centered_cards:
       enabled: true
   image: null
 full_image:
-  image: streamlined_testing_services_for_laboratory_efficiency_photo_with_tint_blue_color_3v445s0xvv86w9f0cnd4_3-enhanced-min.webp
+  image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
 image_left_with_text_on_right:
   header: 'Why Choose LabSense?'
   description: null
-  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
+  image: bubbles_under_microscope_colorful_neutral_day_light_with_blue_tint_0338pdozawurbfnyld9m_0-min.png
   cards:
     -
       id: m2235yat
@@ -130,7 +130,7 @@ cta:
     link: '#contact-us-modal'
   image: cta-bg.jpg
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730661315
+updated_at: 1731158262
 template: service
 alt_seo_meta_title: 'QC and R&D Services'
 alt_seo_meta_description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs. Our centralized laboratory network and expert team ensure reliable results that keep your projects on track.'

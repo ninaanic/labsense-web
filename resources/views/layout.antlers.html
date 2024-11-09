@@ -24,6 +24,8 @@ icon: /assets/ICO.ico
     </head>
     <body class="bg-nile-blue-50">
         <div class="flex flex-col relative hidden" x-data x-init="$el.classList.remove('hidden')">
+            <div class="blurred-follow fixed size-96 hidden lg:block bg-nile-blue-500/10 blur-3xl pointer-events-none duration-75 rounded-full"></div>
+
             <div x-data x-init="$nextTick(() => window.scrollTo(0, 0))"></div>
             {{ partial:nav/header }}
 
@@ -36,25 +38,107 @@ icon: /assets/ICO.ico
 
         {{ AltCookies:Toast }}
 
+        <div x-data></div>
         <script src="https://cdn.jsdelivr.net/npm/ukiyojs@4.1.2/dist/ukiyo.min.js"></script>
         <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
         <script defer>  
+            document.addEventListener("alpine:init", () => {
+  
+                new Ukiyo(".ukiyo",{
+                    scale: 1.2,
+                    speed: 1.2, 
+                })
 
-            new Ukiyo(".ukiyo",{
-                scale: 1.2,
-                speed: 1.2, 
-            })
+                // Initialize Lenis
+                const lenis = new Lenis();
 
-            // Initialize Lenis
-            const lenis = new Lenis();
+                // Use requestAnimationFrame to continuously update the scroll
+                function raf(time) {
+                    lenis.raf(time);
+                    requestAnimationFrame(raf);
+                }
 
-            // Use requestAnimationFrame to continuously update the scroll
-            function raf(time) {
-                lenis.raf(time);
                 requestAnimationFrame(raf);
-            }
 
-            requestAnimationFrame(raf);
+                console.log("Alpine.js has initialized.");
+
+                // Select the blurred div
+                const blurredDiv = document.querySelector('.blurred-follow');
+
+                // Function to update the position of the div based on mouse movement
+                document.addEventListener('mousemove', (event) => {
+                    // Get the mouse's X and Y positions
+                    const mouseX = event.clientX;
+                    const mouseY = event.clientY;
+
+                    // Update the blurred div's position with smooth transformation
+                    blurredDiv.style.transform = `translate(${mouseX - 180}px, ${mouseY - 180}px)`;
+                    // Offset by 50px to center the div over the mouse
+                });
+
+                // ANIMS
+                let typeSplit = new SplitType('[split]', {
+                    types: 'lines, words, chars',
+                    tagName: 'span'
+                })
+
+                // Select all elements with [animate]
+                document.querySelectorAll('[animate]').forEach(element => {
+
+                    gsap.from(element.querySelectorAll('.word'), {
+                        y: '100%',
+                        opacity: 0,
+                        duration: 0.5,
+                        ease: 'power1.out',
+                        stagger: 0.1,
+                        
+                        scrollTrigger: {
+                            trigger: element,
+                            start: 'top bottom',
+                            
+                        }
+                    });
+                });
+
+                gsap.from('[scrub] .word', {
+                    opacity: 0.3,
+                    duration: 0.5,
+                    ease: 'power1.out',
+                    stagger: 0.1,
+                    
+                    scrollTrigger: {
+                        trigger: '[scrub]',
+                        start: "bottom 100%",
+                        end: "bottom center",
+                        scrub: true,
+                    }
+                })
+
+                // Select all elements with [slide-up]
+                document.querySelectorAll('[slide-up]').forEach(element => {
+                    // Get the custom delay from `data-delay` attribute, default to 0 if not set
+                    const delay = parseFloat(element.getAttribute('data-delay')) || 0;
+
+                    gsap.from(element, {
+                        y: 32,               // Move back to original position
+                        opacity: 0,         // Fade in
+                        duration: 1,        // Animation duration
+                        delay: delay,        // Custom delay applied
+                        ease: "power2.out", // Easing effect
+                        scrollTrigger: {
+                            trigger: element,     // Element to trigger animation
+                            start: "top 80%",     // Starts when element is 80% into viewport
+                            toggleActions: "play none none none" // Only play once on enter
+                        }
+                    });
+                });
+                
+            });
 
             if ('scrollRestoration' in history) {
                 history.scrollRestoration = 'manual';

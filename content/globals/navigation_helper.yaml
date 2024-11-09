@@ -4,15 +4,15 @@ data:
     -
       id: m21zzogi
       action:
-        text: '+385 91 3567 932'
-        link: 'tel:385913567932'
+        text: info@labsense.hr
+        link: 'mailto:info@labsense.hr'
       show_icon: true
       icon:
         - phone.svg
       style: outline
       type: card
       enabled: true
-      image: phone.svg
+      image: material-symbols_alternate-email.svg
     -
       id: m2200ei3
       action:

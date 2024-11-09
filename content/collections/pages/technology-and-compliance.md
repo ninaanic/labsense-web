@@ -5,7 +5,7 @@ title: 'Technology and Compliance'
 hero:
   header: 'Experience unmatched laboratory efficiency'
   description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: experience_unmatched_laboratory_efficiency_photo_with_tint_blue_color_rx8ss8k3aqnafkfbfrbl_0-enhanced-min.webp
+  image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
   action:
     text: 'Contact us'
     link: '#contact-us-modal'
@@ -36,13 +36,13 @@ centered_cards:
         Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs and automate the time-consuming manual process / paper work.
       type: card
       enabled: true
-  image: modern_laboratory_photo_with_tint_blue_color_83jq8wfo03mpxytxj1qp_0-enhanced-(1).webp
+  image: modern_laboratory_colorful_neutral_day_light_ahqez90d3an0p5q159no_1-enhanced-(2).png
 full_image:
   image: null
 image_left_with_text_on_right:
   header: 'Why Choose LabSense?'
   description: null
-  image: close_up_microsope_bubles_photo_with_tint_blue_color_hn3u10xaltz5vpj5kfol_1-(1).webp
+  image: bubbles_under_microscope_colorful_neutral_day_light_with_blue_tint_0338pdozawurbfnyld9m_0-min.png
   cards:
     -
       id: m224eaz9
@@ -95,7 +95,7 @@ cta:
   image: bubles.jpg
 template: service
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730661073
+updated_at: 1731158340
 alt_seo_meta_title: 'Technology and Compliance'
 alt_seo_meta_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
 alt_seo_noindex: false

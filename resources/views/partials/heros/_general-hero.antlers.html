@@ -15,9 +15,9 @@
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-12 gap-4 items-end ">
-            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl col-span-2 lg:col-span-6">{{ data.header }}</h1>
+            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl col-span-2 lg:col-span-6" split animate>{{ data.header }}</h1>
 
-            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9">
+            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9" slide-up data-delay="0.3">
                 <div class="bard-large">{{ data.description }}</div>
 
                 {{ partial:misc/button :data="data.action" }}

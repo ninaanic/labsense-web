@@ -21,15 +21,15 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {{ posts }}
                     {{ if index == 0 }}
-                        <div class="flex flex-col lg:col-span-2">
+                        <div class="flex flex-col lg:col-span-2 relative">
+                            <a href="{{ url }}" class="absolute left-0 top-0 w-full h-full"></a>
                             <img src="{{ cover_image.url }}" alt="{{ cover_image.alt }}" class="w-full aspect-video object-cover rounded-2xl border border-black/15 "  style="object-position: {{ cover_image.focus_css }};">
-                            <div class="lg:p-6 flex flex-col gap-4">
+                            <div class="pt-2 lg:p-6 flex flex-col gap-4">
                                 <p class="text-sm text-black/75">{{ date }}</p>
                                 <div class="w-full h-[1px] bg-black opacity-15"></div>
                                 <div class="flex flex-col gap-4">
                                     <p class="text-xl lg:text-3xl text-nile-blue-900 leading-tight">{{ title }}</p>
                                     <div class="bard-large">{{ content | safe_truncate(128, '...') }}</div>
-                                    <a href="{{ url }}" class="text-base text-nile-blue-500 hover:underline">Read more</a>
                                 </div>
                             </div>
                         </div>
