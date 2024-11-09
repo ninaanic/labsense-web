@@ -3,11 +3,11 @@
     <!-- Original background image -->
     {{ if data.image.is_video }}
         <video autoplay muted loop  class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">
-            <source src="{{ data.image.url }}" type="video/webm">
+            <source src="{{ data.image.url }}">
         </video>
 
         <video autoplay muted loop  class="absolute left-0 top-0 w-full h-full object-cover blur-lg " style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
-            <source src="{{ data.image.url }}" type="video/webm">
+            <source src="{{ data.image.url }}">
         </video>
     {{ else }}
         <img src="{{ data.image.url }}" alt="bg-image" class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">

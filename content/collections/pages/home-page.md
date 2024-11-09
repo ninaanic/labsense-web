@@ -3,7 +3,7 @@ id: f0755529-ee96-41aa-a39e-78dd3362ced2
 blueprint: home_page_blueprint
 title: 'Home page'
 hero:
-  image: labsense-min.webm
+  image: labsense-(1)-(1).mp4
   header: 'Make a difference. Choose customization.'
   description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
   action:
@@ -168,7 +168,7 @@ cta:
     link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731158180
+updated_at: 1731162911
 alt_seo_meta_title: 'Home page | LabSense'
 alt_seo_meta_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
 alt_seo_noindex: false
