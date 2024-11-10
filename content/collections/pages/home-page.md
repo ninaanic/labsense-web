@@ -3,7 +3,13 @@ id: f0755529-ee96-41aa-a39e-78dd3362ced2
 blueprint: home_page_blueprint
 title: 'Home page'
 hero:
-  image: labsense-(1)-(1).mp4
+  use_a_video_for_background: true
+  image: null
+  video:
+    mp4: labsense-(1)-(1).mp4
+    webm: labsense-min.webm
+    preview:
+      - preview.jpg
   header: 'Make a difference. Choose customization.'
   description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
   action:
@@ -19,27 +25,33 @@ two_cols_text:
     text: null
     link: null
 cards_with_image_on_left:
+  image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
   header: 'Technology and Compliance'
   description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
+  action:
+    text: 'Read more'
+    link: 'entry::866b6035-a982-4247-90b2-0a90efe288e8'
   cards:
     -
       id: m1ziu9o1
       header: 'Custom-design solutions for laboratory planning'
-      description: 'We offer a unique combination of chemical engineering expertise and creativity to provide our clients with customized solutions that meet their specific requirements in terms of hardware and software solutions.'
+      description: 'We offer a unique combination of chemical engineering expertise and creativity to provide our clients with customized solutions.'
       type: card
       enabled: true
       icon: mdi_test-tube.svg
     -
       id: m1ziuhfl
       header: 'Digitalisation and automation for your lab'
-      description: 'Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs and automate the time-consuming manual process / paper work.'
+      description: 'Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs.'
       type: card
       enabled: true
       icon: mdi_cube-send.svg
 centered_cards:
   header: 'QC and R&D Services - For your formulation!'
   description: 'Our QC and R&D services are designed to optimize your pharmaceutical formulations, from analytical method development and reverse engineering to advanced excipient and raw material testing.'
+  action:
+    text: 'Read more'
+    link: 'entry::55ef50d9-a242-43e6-b01d-6ae7596a0c63'
   cards:
     -
       id: m1zlctgl
@@ -66,21 +78,21 @@ centered_cards:
       id: m1zldsct
       icon: mdi_microscope.svg
       header: 'Analytical Testing in Clinical Trials and BA/BE Studies'
-      description: 'LabSense offers comprehensive analytical testing services for clinical trials and BA/BE studies, adhering to GCLP standards. Our services include method development, bioanalysis, pharmacokinetic studies, stability testing, and quality control.'
+      description: 'LabSense offers comprehensive analytical testing services for clinical trials and BA/BE studies, adhering to GCLP standards.'
       type: card
       enabled: true
     -
       id: m1zle2et
       icon: mdi_medication-outline.svg
       header: 'Rheology: A Key to Pharmaceutical Formulation'
-      description: 'Rheological analysis, using instruments like viscometers, is essential for optimizing drug formulations. It helps ensure product quality, consistency, and effective drug delivery.'
+      description: 'Rheological analysis, using instruments like viscometers, is essential for optimizing drug formulations.'
       type: card
       enabled: true
     -
       id: m1zlec0d
       icon: mdi_google-analytics.svg
       header: 'IVPT of Topical Dosage Forms'
-      description: 'In-vitro permeation testing to evaluate drug delivery into the various skin/eye layers and to select formulations for topical and transdermal application. To assess medication transport into the different layers and choose formulations for topical and transdermal use, in-vitro permeation testing is used.'
+      description: 'In-vitro permeation testing to evaluate drug delivery into the various skin/eye layers and to select formulations for topical and transdermal application.'
       type: card
       enabled: true
     -
@@ -94,7 +106,7 @@ centered_cards:
       id: m1zletif
       icon: mdi_desktop-classic.svg
       header: 'Innovative Microperfusion Testing for Topical Drugs – Precision and Efficiency in Development'
-      description: 'Cutting-edge dermal open flow microperfusion (dOFM) testing, an advanced solution for assessing topical drug penetration and bioequivalence. This innovative technology provides accurate pharmacokinetic data directly from the skin, eliminating the need for traditional clinical endpoint studies.'
+      description: 'Cutting-edge dermal open flow microperfusion (dOFM) testing, an advanced solution for assessing topical drug penetration and bioequivalence.'
       type: card
       enabled: true
 quote_block:
@@ -168,7 +180,7 @@ cta:
     link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731162911
+updated_at: 1731253259
 alt_seo_meta_title: 'Home page | LabSense'
 alt_seo_meta_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
 alt_seo_noindex: false

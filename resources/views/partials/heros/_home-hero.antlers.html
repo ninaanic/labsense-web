@@ -1,13 +1,15 @@
 <div class="flex justify-center py-16 relative overflow-hidden rounded-b-3xl" data-dark-hero>
 
     <!-- Original background image -->
-    {{ if data.image.is_video }}
-        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">
-            <source src="{{ data.image.url }}">
+    {{ if data.use_a_video_for_background }}
+        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover" poster="{{ data.video.preview.url }}" style="object-position: {{ data.image.focus_css }};">
+            <source src="{{ data.video.webm.url }}" type="video/webm">
+            <source src="{{ data.video.mp4.url }}" type="video/mp4">
         </video>
 
-        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover blur-lg " style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
-            <source src="{{ data.image.url }}">
+        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover blur-lg " poster="{{ data.video.preview.url }}" style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
+            <source src="{{ data.video.webm.url }}" type="video/webm">
+            <source src="{{ data.video.mp4.url }}" type="video/mp4">
         </video>
     {{ else }}
         <img src="{{ data.image.url }}" alt="bg-image" class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">

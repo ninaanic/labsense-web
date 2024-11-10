@@ -34,10 +34,6 @@ data:
     label: Contact
     items:
       -
-        id: m2yxlivw
-        label: '+385 91 3567 932'
-        link: 'tel:385913567932'
-      -
         id: m2yxlx9p
         label: 'OIB: 29765016403'
       -

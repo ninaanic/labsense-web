@@ -2,8 +2,17 @@
     <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-4" x-data="{ shown: false }" x-intersect.half="shown = true">
 
         <p class="text-3xl lg:text-4xl text-nile-blue-800 col-span-2 lg:col-span-6 leading-normal" slide-up>{{ data.header }}</p>
-        <div class="col-span-2 lg:col-span-4 lg:col-start-9 bard-large" slide-up data-delay="0.2">
-            {{ data.description }}
+
+        <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9 " slide-up data-delay="0.2">
+            <div class="bard-large">
+                {{ data.description }}
+            </div>
+
+            {{ if data.action.text }}
+                {{ partial:misc/button :data="data.action" }}
+                    <img src="/assets/arrow.svg" alt="arrow">
+                {{ /partial:misc/button }}
+            {{ /if }}
         </div>
 
     </div>

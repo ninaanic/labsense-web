@@ -56,11 +56,6 @@ contact_us:
   description: 'We are here to help you find the best solution to your challenges'
   contacts:
     -
-      id: m2z1ky1v
-      label: '+385 91 3567 932'
-      link: 'tel:385913567932'
-      icon: material-symbols_phone-enabled-outline-sharp.svg
-    -
       id: m2z1l88s
       label: 'OIB: 29765016403'
       icon: material-symbols_document-scanner-outline.svg
@@ -89,7 +84,7 @@ careers:
   careers_form: careers
 template_field: about_us
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1730660998
+updated_at: 1731252383
 template: about_us
 alt_seo_meta_title: 'About LabSense'
 alt_seo_meta_description: 'Lab-Sense makes it easy to streamline your laboratory processes, improve compliance, and boost efficiency. In minutes, not months.'
