@@ -17,35 +17,38 @@ hero:
     link: '#services'
 two_cols_text:
   header: 'Are you struggling to find a reliable laboratory partner that can meet your complex testing needs across the globe?'
-  description: |-
-    Look no further. Our global network of certified labs, combined with industry-leading expertise in pharmaceutical analysis, ensures you receive precise and timely results, no matter where you are.
-
-    We offer tailored solutions to design your lab, streamline digital workflows, and automate processes, helping you push boundaries in R&D and clinical testing.
+  description: 'Look no further. Our global network of certified labs, combined with industry-leading expertise in pharmaceutical analysis, ensures you receive precise and timely results, no matter where you are.'
   action:
     text: null
     link: null
 cards_with_image_on_left:
   image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
-  header: 'Technology and Compliance'
-  description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
+  header: 'Our services'
+  description: 'We offer tailored solutions to design your lab, streamline digital workflows, and automate processes, helping you push boundaries in R&D and clinical testing.'
   action:
-    text: 'Read more'
-    link: 'entry::866b6035-a982-4247-90b2-0a90efe288e8'
+    text: null
+    link: null
   cards:
     -
       id: m1ziu9o1
-      header: 'Custom-design solutions for laboratory planning'
-      description: 'We offer a unique combination of chemical engineering expertise and creativity to provide our clients with customized solutions.'
+      header: 'Technology and Compliance'
+      description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
       type: card
       enabled: true
       icon: mdi_test-tube.svg
+      action:
+        text: 'Read more'
+        link: 'entry::866b6035-a982-4247-90b2-0a90efe288e8'
     -
       id: m1ziuhfl
-      header: 'Digitalisation and automation for your lab'
-      description: 'Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs.'
+      header: 'QC and R&D Services'
+      description: 'Our QC and R&D services are designed to optimize your pharmaceutical formulations, from analytical method development and reverse engineering to advanced excipient and raw material testing.'
       type: card
       enabled: true
       icon: mdi_cube-send.svg
+      action:
+        text: 'Read more'
+        link: 'entry::55ef50d9-a242-43e6-b01d-6ae7596a0c63'
 centered_cards:
   header: 'QC and R&D Services - For your formulation!'
   description: 'Our QC and R&D services are designed to optimize your pharmaceutical formulations, from analytical method development and reverse engineering to advanced excipient and raw material testing.'
@@ -180,7 +183,7 @@ cta:
     link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731253259
+updated_at: 1731522648
 alt_seo_meta_title: 'Home page | LabSense'
 alt_seo_meta_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
 alt_seo_noindex: false

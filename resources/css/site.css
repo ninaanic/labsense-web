@@ -45,8 +45,12 @@
         @apply list-inside list-disc;
     }
 
-    .bard li p, .bard-large li p{
-        @apply inline-block;
+    .bard li, .bard-large li{
+        @apply text-black/70 dark:text-white/75 leading-normal;
+    }
+
+    .bard li{
+        @apply text-base;
     }
 
     .bard > img, .bard-large > img{

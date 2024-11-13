@@ -37,11 +37,29 @@
 </div>
 {{ /two_columns }}
 
+{{ mission_and_vision }}
+<div class="flex justify-center py-14 lg:py-20">
+    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-4">
 
-{{ partial:cards/left-image :data="cards_section" }}
+        <div class="flex flex-col gap-8 lg:gap-12 col-span-2 lg:col-span-4 justify-center">
+            {{ items }}
+                <div class="flex flex-col gap-6 lg:gap-8">
+                    <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal "  slide-up data-delay="0">{{ header }}</p>
 
+                    <div class="bard-large"  slide-up data-delay="0">
+                        {{ description }}
+                    </div>
+                </div>
+            {{ /items }}
+        </div>
 
-{{ partial:text-blocks/quote :data="quote" }}
+        <div class="w-full py-16 col-span-2 min-h-[450px] relative lg:col-span-6 lg:col-start-7">
+            <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo w-full h-full rounded-2xl absolute left-0 top-0 object-cover"/>
+        </div>
+
+    </div>
+</div>
+{{ /mission_and_vision }}
 
 
 {{ certifications }}
@@ -70,6 +88,47 @@
 </div>
 {{ /certifications }}
 
+{{ our_team }}
+<div class="flex flex-col gap-12 items-center justify-center py-14 lg:py-20 z-10" x-data="{ shown: false }" x-intersect.half="shown = true">
+    <div 
+    class="body-container grid grid-cols-2 lg:grid-cols-12 gap-4">
+
+        <p class="text-3xl lg:text-4xl text-nile-blue-800 col-span-2 lg:col-span-6 leading-normal"  slide-up data-delay="0">{{ header }}</p>
+
+        <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9 " slide-up data-delay="0.2">
+            <div class="bard-large" >
+                {{ description }}
+            </div>
+        </div>
+
+    </div>
+
+    <div 
+    class="body-container grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-8">
+        {{ profiles }}
+            <div class="flex flex-col gap-4 lg:pb-12">
+
+                <img src="{{ avatar.url }}" alt="{{ avatar.alt }}" class="w-full aspect-square object-cover rounded-xl"/>
+
+
+                <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-0">
+                        <p class="text-xl text-black">{{ name }}</p>
+                        <p class="text-sm text-black/75">{{ position }}</p>
+                    </div>
+                    <!-- <div class="bard">
+                        {{ description }}
+                    </div> -->
+                </div>
+            </div>
+        {{ /profiles }}
+    </div>
+</div>
+{{ /our_team }}
+
+{{ partial:cards/cards-center :data="laboratory" }}
+
+{{ partial:text-blocks/quote :data="quote" }}
 
 {{ contact_us }}
 

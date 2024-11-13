@@ -3,9 +3,11 @@
 
         <p class="text-2xl lg:text-3xl text-nile-blue-800 leading-normal" split >{{ data.text }}</p>
 
-        {{ partial:misc/button :data="data.action" }}
-            <img src="/assets/arrow.svg" alt="arrow">
-        {{ /partial:misc/button }}
+        {{ if data.action.text }}
+            {{ partial:misc/button :data="data.action" }}
+                <img src="/assets/arrow.svg" alt="arrow">
+            {{ /partial:misc/button }}
+        {{ /if }}
 
     </div>
 </div>
