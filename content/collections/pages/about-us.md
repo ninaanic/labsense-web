@@ -54,7 +54,7 @@ careers:
   careers_form: careers
 template_field: about_us
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731529325
+updated_at: 1731703670
 template: about_us
 alt_seo_meta_title: 'About LabSense'
 alt_seo_meta_description: 'Lab-Sense makes it easy to streamline your laboratory processes, improve compliance, and boost efficiency. In minutes, not months.'
@@ -205,4 +205,6 @@ laboratory:
       header: 'Network of third-party labs/experts/academia for global reach'
 quote:
   text: 'In the pharmaceutical industry, R&D and clinical trials are highly demanding processes that require the utmost precision and speed. The accuracy of laboratory testing is paramount to ensuring the safety and efficacy of new drugs, while rapid turnaround times are crucial for bringing innovative treatments to patients as quickly as possible. However, traditional laboratory operations often struggle to meet these demands, leading to delays, increased costs, and potential risks to patient health.'
+full_image:
+  image: modern_laboratory_colorful_neutral_day_light_ahqez90d3an0p5q159no_1-enhanced-(2).png
 ---

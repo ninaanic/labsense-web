@@ -144,56 +144,19 @@ tabs:
                     type: text
                     display: 'Helper text'
           -
-            handle: our_team
+            handle: full_image
             field:
               type: group
-              display: 'Our team'
+              display: 'Full image'
               fields:
                 -
-                  handle: header
+                  handle: image
                   field:
-                    type: text
-                    display: Header
-                -
-                  handle: description
-                  field:
-                    type: markdown
-                    display: Description
-                -
-                  handle: profiles
-                  field:
-                    type: replicator
-                    display: Profiles
-                    sets:
-                      new_set_group:
-                        display: 'New Set Group'
-                        sets:
-                          profile:
-                            display: Profile
-                            fields:
-                              -
-                                handle: avatar
-                                field:
-                                  max_files: 1
-                                  min_files: 1
-                                  container: assets
-                                  type: assets
-                                  display: Avatar
-                              -
-                                handle: name
-                                field:
-                                  type: text
-                                  display: Name
-                              -
-                                handle: position
-                                field:
-                                  type: text
-                                  display: Position
-                              -
-                                handle: description
-                                field:
-                                  type: markdown
-                                  display: Description
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
           -
             handle: laboratory
             field:
