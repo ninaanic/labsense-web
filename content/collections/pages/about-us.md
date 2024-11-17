@@ -4,7 +4,7 @@ blueprint: about_us
 title: 'About us'
 hero:
   header: 'LabSense - Your Partner in Laboratory Excellence'
-  description: 'We bring together a wealth of experience in laboratory technology, turnkey solutions, testing, regulations and compliance.'
+  description: 'Labsense empowers faster, more effective testing. Join us in transforming the future of pharmaceutical innovation!'
   action:
     text: 'Get a consultation'
     link: '#contact_us'
@@ -54,7 +54,7 @@ careers:
   careers_form: careers
 template_field: about_us
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731703670
+updated_at: 1731850995
 template: about_us
 alt_seo_meta_title: 'About LabSense'
 alt_seo_meta_description: 'Lab-Sense makes it easy to streamline your laboratory processes, improve compliance, and boost efficiency. In minutes, not months.'
