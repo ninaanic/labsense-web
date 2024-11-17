@@ -3,9 +3,9 @@ id: 866b6035-a982-4247-90b2-0a90efe288e8
 blueprint: services
 title: 'Technology and Compliance'
 hero:
-  header: 'Experience unmatched laboratory efficiency'
+  header: 'Experience unmatched laboratory‎ ‎ efficiency'
   description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
+  image: jb5bw1zqdhm2bokker9mw83idl32tfn8-enhanced-(1).png
   action:
     text: 'Contact us'
     link: '#contact-us-modal'
@@ -36,7 +36,7 @@ centered_cards:
         Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs and automate the time-consuming manual process / paper work.
       type: card
       enabled: true
-  image: modern_laboratory_colorful_neutral_day_light_ahqez90d3an0p5q159no_1-enhanced-(2).png
+  image: equipment-a-e1678902018237-(1).jpg
 full_image:
   image: null
 image_left_with_text_on_right:
@@ -95,7 +95,7 @@ cta:
   image: bubles.jpg
 template: service
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731158340
+updated_at: 1731867680
 alt_seo_meta_title: 'Technology and Compliance'
 alt_seo_meta_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
 alt_seo_noindex: false
@@ -103,4 +103,6 @@ alt_seo_nofollow: false
 alt_seo_social_title: 'Technology and Compliance'
 alt_seo_social_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
 exclude_from_sitemap: false
+quote:
+  text: null
 ---

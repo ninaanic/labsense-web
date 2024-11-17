@@ -68,6 +68,17 @@ tabs:
                     type: markdown
                     display: Description
           -
+            handle: quote
+            field:
+              type: group
+              display: Quote
+              fields:
+                -
+                  handle: text
+                  field:
+                    type: textarea
+                    display: Text
+          -
             handle: centered_cards
             field:
               type: group
@@ -95,6 +106,18 @@ tabs:
                           card:
                             display: Card
                             fields:
+                              -
+                                handle: color
+                                field:
+                                  type: color
+                                  display: Color
+                                  width: 50
+                              -
+                                handle: color_end
+                                field:
+                                  type: color
+                                  display: 'Color end'
+                                  width: 50
                               -
                                 handle: icon
                                 field:

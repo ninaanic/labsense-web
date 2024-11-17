@@ -11,7 +11,7 @@
     x-cloak
     class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
     <!-- Modal Content -->
-    <div class="bg-white p-6 rounded shadow-lg max-w-lg w-full dark" @click.away="isOpen = false;">
+    <div class="bg-white p-6 rounded shadow-lg max-w-lg w-full dark" @click.away="isOpen = false; window.location.hash = ''">
         <h2 class="text-2xl text-nile-blue-900 mb-4">Contact us</h2>
         
         <form method="post" x-data="formHandler('{{ csrf_token }}','/!/forms/contact_us')"

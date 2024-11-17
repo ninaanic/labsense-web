@@ -1,6 +1,12 @@
 {{ partial:heros/general-hero :data="hero" }}
 
-{{ partial:text-blocks/two-cols :data="two_cols_text" }}
+{{ if two_cols_text.header }}
+    {{ partial:text-blocks/two-cols :data="two_cols_text" }}
+{{ /if }}
+
+{{ if quote.text }}
+    {{ partial:text-blocks/quote :data="quote" }}
+{{ /if }}
 
 {{ if full_image.image }}
     <div class="flex justify-center py-14 lg:py-20">
@@ -13,7 +19,7 @@
 {{ /if }}
 
 {{ if ( (centered_cards.cards | length) > 3 ) }}
-    {{ partial:cards/cards-center :data="centered_cards" }}
+    {{ partial:cards/cards-center :data="centered_cards" fitheight="true" }}
 {{ else }}
     {{ partial:cards/left-image :data="centered_cards" }}
 {{ /if }}

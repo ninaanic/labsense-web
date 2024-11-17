@@ -1,3 +1,7 @@
+---
+fitheight: false
+---
+
 <div class="flex flex-col gap-12 items-center justify-center py-14 lg:py-20" x-data="{ shown: false }" x-intersect.half="shown = true">
     <div 
     class="body-container grid grid-cols-2 lg:grid-cols-12 gap-4">
@@ -22,7 +26,7 @@
     class="body-container grid grid-cols-1 lg:grid-cols-3 gap-4">
 
         {{ foreach:data.cards }}
-            {{ partial:cards/card-base :data="value"}}
+            {{ partial:cards/card-base :data="value" :fitheight="view.fitheight" }}
         {{ /foreach:data.cards }}
 
     </div>

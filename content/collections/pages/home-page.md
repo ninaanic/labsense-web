@@ -14,7 +14,7 @@ hero:
   description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
   action:
     text: 'Explore Our Services'
-    link: '#services'
+    link: '#services-modal'
 two_cols_text:
   header: 'Are you struggling to find a reliable laboratory partner that can meet your complex testing needs across the globe?'
   description: 'Look no further. Our global network of certified labs, combined with industry-leading expertise in pharmaceutical analysis, ensures you receive precise and timely results, no matter where you are.'
@@ -183,7 +183,7 @@ cta:
     link: '#contact-us-modal'
 template: home
 updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731522648
+updated_at: 1731861940
 alt_seo_meta_title: 'Home page | LabSense'
 alt_seo_meta_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
 alt_seo_noindex: false
@@ -192,4 +192,6 @@ alt_seo_social_title: 'Home page | LabSense'
 alt_seo_social_description: "From cutting-edge R&D and precise laboratory testing to expert automation and digitalization solutions, we're your catalyst for success in the pharma innovation and clinical studies."
 alt_seo_social_image: modern_laboratory_testing_session_photo_with_tint_blue_color_qlfc5vhreoqcyy2s2p22_2-enhanced-(1).webp
 exclude_from_sitemap: false
+full_image:
+  image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
 ---

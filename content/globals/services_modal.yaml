@@ -1,0 +1,23 @@
+title: 'Services modal'
+data:
+  items:
+    -
+      id: m3lub0ma
+      image: a_scintiest_with_a_tablet_in_modern_laboratory_colorful_neutral_light_124q6qf14oua8okuld23_3-enhanced-(1).webp
+      headline: 'QC and R&D Services'
+      description: 'LabSense provides comprehensive QC and R&D solutions tailored to your pharmaceutical needs.'
+      action:
+        text: Explore
+        link: 'entry::55ef50d9-a242-43e6-b01d-6ae7596a0c63'
+      type: item
+      enabled: true
+    -
+      id: m3luo4eh
+      image: laboratory_efficiency_colorful_neutral_light_nt7kwzw3s4x3h0gfzoqd_3-enhanced.webp
+      headline: 'Experience unmatched laboratory efficiency'
+      description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
+      action:
+        text: Explore
+        link: 'entry::866b6035-a982-4247-90b2-0a90efe288e8'
+      type: item
+      enabled: true

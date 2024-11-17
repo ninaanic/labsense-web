@@ -121,10 +121,10 @@ tabs:
                           type: link
                           display: Link
           -
-            handle: cards_with_image_on_left
+            handle: full_image
             field:
               type: group
-              display: 'Services block'
+              display: 'Full image'
               fields:
                 -
                   handle: image
@@ -134,77 +134,6 @@ tabs:
                     container: assets
                     type: assets
                     display: Image
-                -
-                  handle: header
-                  field:
-                    type: text
-                    display: Header
-                -
-                  handle: description
-                  field:
-                    type: markdown
-                    display: Description
-                -
-                  handle: action
-                  field:
-                    type: group
-                    display: Action
-                    fields:
-                      -
-                        handle: text
-                        field:
-                          type: text
-                          display: Text
-                      -
-                        handle: link
-                        field:
-                          type: link
-                          display: Link
-                -
-                  handle: cards
-                  field:
-                    type: replicator
-                    display: Cards
-                    sets:
-                      new_set_group:
-                        display: 'New Set Group'
-                        sets:
-                          card:
-                            display: Card
-                            fields:
-                              -
-                                handle: icon
-                                field:
-                                  max_files: 1
-                                  container: assets
-                                  type: assets
-                                  display: Icon
-                              -
-                                handle: header
-                                field:
-                                  type: text
-                                  display: Header
-                              -
-                                handle: description
-                                field:
-                                  type: markdown
-                                  display: Description
-                              -
-                                handle: action
-                                field:
-                                  type: group
-                                  display: Action
-                                  fields:
-                                    -
-                                      handle: text
-                                      field:
-                                        type: text
-                                        display: Text
-                                    -
-                                      handle: link
-                                      field:
-                                        type: link
-                                        display: Link
           -
             handle: quote_block
             field:
@@ -285,45 +214,6 @@ tabs:
                                 field:
                                   type: markdown
                                   display: Description
-          -
-            handle: image_right_with_text_on_left
-            field:
-              type: group
-              display: 'Image right with text on left'
-              fields:
-                -
-                  handle: header
-                  field:
-                    type: text
-                    display: Header
-                -
-                  handle: description
-                  field:
-                    type: markdown
-                    display: Description
-                -
-                  handle: image
-                  field:
-                    max_files: 1
-                    container: assets
-                    type: assets
-                    display: Image
-                -
-                  handle: action
-                  field:
-                    type: group
-                    display: Action
-                    fields:
-                      -
-                        handle: text
-                        field:
-                          type: text
-                          display: Text
-                      -
-                        handle: link
-                        field:
-                          type: link
-                          display: Link
           -
             handle: cta
             field:

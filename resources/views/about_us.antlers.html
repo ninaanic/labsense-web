@@ -26,10 +26,10 @@
 
     <div class="body-container grid grid-cols-1 lg:grid-cols-2 gap-4">
 
-        <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo min-h-[350px] rounded-2xl">
+        <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo min-h-[300px] rounded-2xl">
 
-        <div class="flex flex-col justify-between gap-4 p-6 rounded-2xl bg-white min-h-[350px]">
-            <p class=" text-sm text-nile-blue-800">{{ header }}</p>
+        <div class="flex flex-col justify-between gap-4 p-6 rounded-2xl bg-white min-h-[300px]">
+            <p class=" text-xl text-nile-blue-800">{{ header }}</p>
             <div class="bard-large">{{ description }}</div>
         </div>
 
@@ -37,25 +37,20 @@
 </div>
 {{ /two_columns }}
 
+
 {{ mission_and_vision }}
-<div class="flex justify-center py-14 lg:py-20">
-    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-4">
+<div class="flex justify-center -mt-8 lg:-mt-16 pb-14 lg:pb-20" slide-up data-delay="0.5">
 
-        <div class="flex flex-col gap-8 lg:gap-12 col-span-2 lg:col-span-4 justify-center">
-            {{ items }}
-                <div class="flex flex-col gap-6 lg:gap-8">
-                    <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal "  slide-up data-delay="0">{{ header }}</p>
+    <div class="body-container grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-                    <div class="bard-large"  slide-up data-delay="0">
-                        {{ description }}
-                    </div>
-                </div>
-            {{ /items }}
+        {{ items }}
+        <div class="flex flex-col justify-between gap-4 p-6 rounded-2xl bg-white min-h-[300px]">
+            <p class=" text-xl text-nile-blue-800">{{ header }}</p>
+            <div class="bard-large">{{ description }}</div>
         </div>
+        {{ /items }}
 
-        <div class="w-full py-16 col-span-2 min-h-[450px] relative lg:col-span-6 lg:col-start-7">
-            <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo w-full h-full rounded-2xl absolute left-0 top-0 object-cover"/>
-        </div>
+        <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo min-h-[300px] rounded-2xl">
 
     </div>
 </div>
