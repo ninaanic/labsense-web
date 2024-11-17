@@ -20,7 +20,7 @@
                 <img src="{{ image.url }}" alt="{{ image.alt }}" class=" object-cover min-h-[150px] lg:min-h-[500px]">
                 <div class="flex flex-col gap-2 lg:gap-4 p-4 group-hover:bg-nile-blue-100 duration-300 flex-1">
                     <p class="text-base lg:text-xl text-nile-blue-800">{{ headline }}</p>
-                    <div class="text-sm lg:text-base bard">{{ description }}</div>
+                    <div class="text-sm lg:text-base bard hidden lg:flex">{{ description }}</div>
                     <div class="mt-3">
                         {{ partial:misc/button :data="action" }}
                             <img src="/assets/arrow.svg" alt="arrow">
