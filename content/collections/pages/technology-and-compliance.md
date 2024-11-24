@@ -1,108 +1,104 @@
 ---
-id: 866b6035-a982-4247-90b2-0a90efe288e8
-blueprint: services
+id: 98a77047-2b67-4ffb-be60-fa82c64a00fc
+blueprint: generic
 title: 'Technology and Compliance'
-hero:
-  header: 'Experience unmatched laboratory‎ ‎ efficiency'
-  description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
-  image: jb5bw1zqdhm2bokker9mw83idl32tfn8-enhanced-(1).png
-  action:
-    text: 'Contact us'
-    link: '#contact-us-modal'
-two_cols_text:
-  header: 'Experience unmatched laboratory efficiency with our tailored solutions that cater to every aspect of your laboratory needs.'
-  description: 'From the initial building design and construction to lab furniture and sophisticated analysis systems, we ensure that every detail is customized to enhance your workflow and productivity.'
-centered_cards:
-  header: 'Laboratory technology'
-  description: 'From the initial building design and construction to lab furniture and sophisticated analysis systems, we ensure that every detail is customized to enhance your workflow and productivity.'
-  cards:
-    -
-      id: m224cko8
-      icon: mdi_test-tube.svg
-      header: 'Custom-design solutions for laboratory planning'
-      description: |-
-        We offer a unique combination of chemical engineering expertise and creativity to provide our clients with customized solutions that meet their specific requirements in terms of hardware and software solutions.
-
-        Customizations can range from simple modifications to substantial changes to existing products to meet your individual requirements.
-      type: card
-      enabled: true
-    -
-      id: m224cv5p
-      icon: mdi_cube-send.svg
-      header: 'Digitalisation and automation for your lab'
-      description: |-
-        Laboratory automation is essential for laboratories that have repetitive and high-throughput processes under regulated environment.
-
-        Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs and automate the time-consuming manual process / paper work.
-      type: card
-      enabled: true
-  image: equipment-a-e1678902018237-(1).jpg
-full_image:
-  image: null
-image_left_with_text_on_right:
-  header: 'Why Choose LabSense?'
-  description: null
-  image: bubbles_under_microscope_colorful_neutral_day_light_with_blue_tint_0338pdozawurbfnyld9m_0-min.png
-  cards:
-    -
-      id: m224eaz9
-      icon: mdi_magnify.svg
-      header: 'Global Reach'
-      description: 'Our network of experts and laboratories extends our reach, providing you with access to specialized services and resources worldwide.'
-      type: card
-      enabled: true
-    -
-      id: m224en39
-      icon: mdi_microscope.svg
-      header: 'Expertise and Experience'
-      description: 'Our team of highly qualified scientists brings years of experience in pharmaceutical analysis and clinical trials.'
-      type: card
-      enabled: true
-    -
-      id: m224eudh
-      icon: mdi_desktop-classic.svg
-      header: 'State-of-the-Art Equipment'
-      description: 'We invest in the latest analytical technologies to ensure the highest accuracy and precision in our results.'
-      type: card
-      enabled: true
-    -
-      id: m224f1t1
-      icon: mdi_test-tube.svg
-      header: 'Customized Solutions'
-      description: 'We work closely with our clients to understand their specific needs and provide tailored solutions.'
-      type: card
-      enabled: true
-    -
-      id: m224f9u5
-      icon: mdi_developer-board.svg
-      header: 'Quality and Compliance'
-      description: 'We adhere to strict quality standards and regulatory requirements to guarantee the reliability of our services.'
-      type: card
-      enabled: true
-    -
-      id: m224fhj9
-      icon: mdi_cube-send.svg
-      header: 'Timely Delivery'
-      description: 'We understand the importance of timely results, and we strive to deliver our findings within agreed-upon timelines.'
-      type: card
-      enabled: true
-cta:
-  header: 'Ready to Transform Your Laboratory Experience?'
-  description: 'Contact LabSense today to discuss your specific needs and discover how we can help you achieve your research and development goals. Let’s build the future of your laboratory together!'
-  action:
-    text: 'Get a consultation'
-    link: '#contact-us-modal'
-  image: bubles.jpg
-template: service
-updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
-updated_at: 1731867680
-alt_seo_meta_title: 'Technology and Compliance'
-alt_seo_meta_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
+template: generic_page
 alt_seo_noindex: false
 alt_seo_nofollow: false
-alt_seo_social_title: 'Technology and Compliance'
-alt_seo_social_description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
 exclude_from_sitemap: false
-quote:
-  text: null
+updated_by: a37fb727-41af-4015-8baf-8a2cba739a58
+updated_at: 1732480148
+blocks:
+  -
+    id: m3vzxvik
+    header: 'Experience unmatched laboratory   efficiency'
+    description: 'Plan your complete laboratory beginning with the building through construction, lab furniture and analysis systems to customized software solutions.'
+    image: thumbnail_img-20241120-wa0007.jpg
+    action:
+      text: 'Contact us'
+      link: '#contact-us-modal'
+    type: hero_with_an_image
+    enabled: true
+  -
+    id: m3w1u0c5
+    cards:
+      -
+        id: m3w1u5kt
+        image: thumbnail_img-20241120-wa0006.jpg
+        size: 6
+        type: image_card
+        enabled: true
+      -
+        id: m3w1u3ad
+        header: 'Experience unmatched laboratory efficiency with our tailored solutions that cater to every aspect of your laboratory needs.'
+        description: 'From the initial building design and construction to lab furniture and sophisticated analysis systems, we ensure that every detail is customized to enhance your workflow and productivity.'
+        size: 6
+        type: text_card
+        enabled: true
+    type: cards_grid
+    enabled: true
+  -
+    id: m3w0ju44
+    header: 'Experience unmatched laboratory efficiency with our tailored solutions that cater to every aspect of your laboratory needs.'
+    description: 'From the initial building design and construction to lab furniture and sophisticated analysis systems, we ensure that every detail is customized to enhance your workflow and productivity.'
+    type: two_columns_text
+    enabled: false
+  -
+    id: m3w0ka38
+    header: 'We offer tailored solutions for laboratory and industrial processes, designed to optimize efficiency and enhance productivity.'
+    description: 'By integrating cutting-edge digitalization and automation technologies, we streamline workflows and ensure seamless operation. Our expertise guarantees full compliance with all regulatory standards and requirements, providing you with innovative solutions that prioritize quality, safety, and reliability at every step.'
+    cards:
+      -
+        id: m3w0ksaf
+        color: '#08B86E'
+        color_end: '#08834F'
+        icon: mdi_test-tube.svg
+        header: 'Custom-design solutions for laboratory planning'
+        description: |-
+          We offer a unique combination of chemical engineering expertise and creativity to provide our clients with customized solutions that meet their specific requirements in terms of hardware and software solutions.
+
+          Customizations can range from simple modifications to substantial changes to existing products to meet your individual requirements.
+        type: card
+        enabled: true
+      -
+        id: m3w0lndg
+        color: '#08B86E'
+        color_end: '#08834F'
+        icon: mdi_cube-send.svg
+        header: 'Digitalisation and automation for your lab'
+        description: |-
+          Laboratory automation is essential for laboratories that have repetitive and high-throughput processes under regulated environment.
+
+          Quality Management System solutions; QMS, Laboratory Information Management System Solutions; LIMS provide data integrity and quality control in labs and automate the time-consuming manual process / paper work.
+        type: card
+        enabled: true
+    type: two_columns_cards
+    enabled: true
+  -
+    id: m3w1iict
+    image: i_stock_1150976534_a80b688549.jpg
+    header: 'Eupry: Advanced Temperature and Humidity Monitoring'
+    description: 'Eupry’s temperature and humidity sensors are cutting-edge solutions designed to maintain precision and control in laboratory environments. These sensors ensure accurate monitoring and compliance with regulatory standards such as GDP, GMP, and ISO guidelines, making them ideal for laboratories, pharmaceuticals, and healthcare facilities. With seamless integration into your workflow, real-time alerts, and easy data access via cloud-based platforms, Eupry delivers reliability and peace of mind for sensitive operations.'
+    type: text_with_image_right
+    enabled: true
+  -
+    id: m3w1mgst
+    image: lims-review-twitter.webp
+    header: 'LIMS: Streamlining Laboratory Data Management'
+    description: 'A Laboratory Information Management System (LIMS) is essential for modern laboratories seeking efficiency and accuracy. LIMS centralizes data management, automates workflows, and ensures seamless traceability across all processes while maintaining compliance with regulatory standards such as GxP and ISO requirements. From sample tracking to regulatory reporting, a tailored LIMS solution enhances collaboration, reduces errors, and supports decision-making, enabling your laboratory to operate at peak performance.'
+    type: text_with_image_left
+    enabled: true
+  -
+    id: m3w0mb4s
+    header: 'Ready to Transform Your Laboratory Experience?'
+    description: |-
+      Ready to Transform Your Laboratory Experience?
+
+      Contact LabSense today to discuss your specific needs and discover how we can help you achieve your research and development goals. Let’s build the future of your laboratory together!
+    action:
+      text: 'Contact us'
+      link: '#contact-us-modal'
+    image: cta-bg.jpg
+    type: cta
+    enabled: true
 ---

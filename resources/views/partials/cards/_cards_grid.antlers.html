@@ -1,0 +1,21 @@
+<div class="flex justify-center py-14 lg:py-20" slide-up data-delay="0.5">
+
+    <div class="body-container grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+        {{ cards }}
+
+            {{ if type=='image_card' }}
+                <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo min-h-[300px] max-h-[350px] object-cover w-full rounded-2xl lg:col-span-{{ size }}">
+            {{ else }}
+                <div class="flex flex-col justify-between gap-4 p-6 rounded-2xl bg-white min-h-[300px] lg:col-span-{{ size }}">
+                    <p class=" text-xl text-nile-blue-800">{{ header }}</p>
+                    <div class="bard-large">{{ description }}</div>
+                </div>
+            {{ /if }}
+        
+        {{ /cards }}
+
+        
+
+    </div>
+</div>

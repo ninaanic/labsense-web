@@ -1,0 +1,23 @@
+<div class="flex justify-center py-14 lg:py-20 relative">
+    <div class="body-container grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+
+        <div class="flex flex-col gap-6 lg:gap-8 col-span-1 lg:col-span-5">
+            <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal ">{{ header }}</p>
+
+            <div class="bard-large">
+                {{ description }}
+            </div>
+        </div>
+
+        <div
+            class="col-span-1 lg:col-span-5 lg:col-start-8 p-6 rounded-2xl bg-white min-h-[350px] border border-black/15 flex gap-6 flex-wrap items-center justify-center relative">
+            <p class="text-sm text-black/50 absolute top-4 left-4">{{ helper_text }}</p>
+            {{ certificate }}
+            <a href="{{ link.url }}" target="_blank">
+                <img src="{{ icon.url }}" alt="{{ icon.alt }}" class="size-40 object-cover" />
+            </a>
+            {{ /certificate }}
+        </div>
+
+    </div>
+</div>

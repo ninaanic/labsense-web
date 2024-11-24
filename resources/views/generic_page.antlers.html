@@ -1,0 +1,59 @@
+{{ blocks }}
+
+    {{ if type=='video_or_image_hero' }}
+        {{ partial:heros/home-hero }}
+    {{ /if }}
+    {{ if type=='two_columns_text' }}
+        {{ partial:text-blocks/two-cols }}
+    {{ /if }}
+    {{ if type=='spacer' }}
+        {{ partial:misc/spacer }}
+    {{ /if }}
+    {{ if type=='full_width_image' }}
+        {{ partial:misc/full-image }}
+    {{ /if }}
+    {{ if type=='quote' }}
+        {{ partial:text-blocks/quote }}
+    {{ /if }}
+    {{ if type=='feature_with_cards' }}
+        {{ partial:cards/left-image-2 }}
+    {{ /if }}
+    {{ if type=='cta' }}
+        {{ partial:ctas/block }}
+    {{ /if }}
+    {{ if type=='services_modal' }}
+        {{ partial:services_modal }}
+    {{ /if }}
+    {{ if type=='hero_with_an_image' }}
+        {{ partial:heros/general-hero }}
+    {{ /if }}
+    {{ if type=='three_columns_cards' }}
+        {{ partial:cards/cards-center }}
+    {{ /if }}
+    {{ if type=='two_columns_cards' }}
+        {{ partial:cards/left-image }}
+    {{ /if }}
+    {{ if type=='two_columns_text_hero' }}
+        {{ partial:heros/two_columns_text_hero }}
+    {{ /if }}
+    {{ if type=='cards_grid' }}
+        {{ partial:cards/cards_grid }}
+    {{ /if }}
+    {{ if type=='certifications' }}
+        {{ partial:special/certifications }}
+    {{ /if }}
+    {{ if type=='contact_us_block' }}
+        {{ partial:special/contact_us_block }}
+    {{ /if }}
+    {{ if type=='careers_block' }}
+        {{ partial:special/careers_block }}
+    {{ /if }}
+    {{ if type=='text_with_image_right' }}
+        {{ partial:text-blocks/text_with_image_right }}
+    {{ /if }}
+    {{ if type=='text_with_image_left' }}
+        {{ partial:text-blocks/text_with_image_left }}
+    {{ /if }}
+
+
+{{ /blocks }}

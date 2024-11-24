@@ -1,0 +1,116 @@
+<div class="flex justify-center py-14 pb-20 lg:py-20 lg:pb-32 relative" id="contact_us">
+    <div class="body-container grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+        <div class="flex flex-col gap-8 lg:gap-12 col-span-1 lg:col-span-5 justify-between">
+            <div class="flex flex-col gap-4 lg:gap-6">
+                <p class="text-4xl lg:text-6xl text-nile-blue-800 leading-normal ">{{ header }}</p>
+
+                <div class="bard-large">
+                    {{ description }}
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                {{ contacts }}
+                <div class="px-3 py-2 flex gap-4 items-center bg-white rounded-2xl border border-black/15">
+                    <div
+                        class="size-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#2D79B8] to-[#143652]">
+                        <img src="{{ icon.url }}" alt="{{ icon.alt }}" class="size-5">
+                    </div>
+
+                    {{ if link }}
+                    <a href="{{ link.url }}" class="text-xl text-nile-blue-800 leading-none hover:underline">{{ label
+                        }}</a>
+                    {{ else }}
+                    <p class="text-xl text-nile-blue-800 leading-none">{{ label }}</p>
+                    {{ /if }}
+                </div>
+                {{ /contacts }}
+            </div>
+        </div>
+
+        <div
+            class="col-span-1 lg:col-span-4 lg:col-start-9 p-6 bg-white rounded-2xl border border-black/15 shadow-2xl shadow-nile-blue-500/15">
+            <form method="post" x-data="formHandler('{{ csrf_token }}','/!/forms/{{ contact_us_form.handle }}')"
+                @submit.prevent="submitForm" class="space-y-4">
+                <!-- Full Name -->
+
+                <input type="text" name="honeypot" class="hidden" />
+                <div>
+                    <label for="full_name" class="block">Full Name</label>
+                    <input type="text" id="full_name" x-model="form.full_name" class="w-full p-2 border rounded"
+                        placeholder="Enter your full name" required />
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block">Email</label>
+                    <input type="email" id="email" x-model="form.email" class="w-full p-2 border rounded"
+                        placeholder="Enter your email" required />
+                </div>
+
+                <!-- Phone Number -->
+                <div>
+                    <label for="phone_number" class="block">Phone Number</label>
+                    <input x-mask="+999 99 9999 999" type="tel" id="phone_number" x-model="form.phone_number" class="w-full p-2 border rounded"
+                        placeholder="Enter your phone number" required />
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block ">Message</label>
+                    <textarea id="message" x-model="form.message" class="w-full p-2 border rounded" rows="4"
+                        placeholder="Enter your message" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full btn btn-primary justify-center" :disabled="isSubmitting">
+                    <span x-show="!isSubmitting">Submit</span>
+                    <span x-show="isSubmitting">Submitting...</span>
+                </button>
+
+                <!-- Submission Success Message -->
+                <div x-show="submitted" class="mt-4 text-green-600 font-semibold">
+                    Thank you! Your message has been sent.
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    function formHandler(token, endpoint) {
+        return {
+            form: {
+                full_name: '',
+                email: '',
+                phone_number: '',
+                message: '',
+                _token: token
+            },
+            isSubmitting: false,
+            submitted: false,
+            async submitForm() {
+                this.isSubmitting = true;
+                this.submitted = false;
+
+                // Example of sending data; adjust URL and data structure as necessary for your Statamic form endpoint
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(this.form),
+                });
+
+                if (response.ok) {
+                    this.submitted = true;
+                    this.form = { name: '', email: '', phone: '', message: '' }; // Reset form
+                } else {
+
+                }
+
+                this.isSubmitting = false;
+            }
+        }
+    }
+</script>

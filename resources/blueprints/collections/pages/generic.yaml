@@ -1,5 +1,5 @@
-order: 3
-title: FAQ
+order: 1
+title: Generic
 tabs:
   main:
     display: Main
@@ -13,59 +13,11 @@ tabs:
               required: true
               validate:
                 - required
+      -
+        display: Content
+        fields:
           -
-            handle: header
-            field:
-              type: text
-              display: Header
-          -
-            handle: description
-            field:
-              container: assets
-              buttons:
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - link
-                - image
-                - table
-                - asset
-              type: markdown
-              display: Description
-          -
-            handle: questions_and_answers
-            field:
-              type: replicator
-              display: 'Questions and answers'
-              sets:
-                new_set_group:
-                  display: 'New Set Group'
-                  sets:
-                    new_set:
-                      display: 'New Set'
-                      fields:
-                        -
-                          handle: question
-                          field:
-                            type: text
-                            display: Question
-                        -
-                          handle: answer
-                          field:
-                            buttons:
-                              - bold
-                              - italic
-                              - unorderedlist
-                              - orderedlist
-                              - quote
-                              - link
-                              - image
-                              - table
-                              - asset
-                            type: markdown
-                            display: Answer
+            import: page_blocks
   sidebar:
     display: Sidebar
     sections:

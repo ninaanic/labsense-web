@@ -1,0 +1,116 @@
+<div class="flex justify-center py-14 lg:py-20 relative bg-gradient-to-tr from-[#08B86E] to-[#08834F] rounded-t-3xl overflow-hidden">
+    <div class="body-container grid grid-cols-1 lg:grid-cols-12 gap-4 items-center relative">
+
+        <img src="/assets/LogoShape.svg" alt="Decorative shape" class="absolute h-[400px] lg:h-full bottom-0 lg:-right-20 opacity-5 mix-blend-multiply">
+
+        <div class="flex flex-col gap-8 lg:gap-12 col-span-1 lg:col-span-5 justify-between dark z-20">
+            <div class="flex flex-col gap-4 lg:gap-6">
+                <p class="text-4xl lg:text-6xl text-white leading-normal ">{{ header }}</p>
+
+                <div class="bard-large !text-white">
+                    {{ description }}
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+                {{ advantages }}
+                <div class="flex flex-col gap-3 lg:gap-4">
+                    <p class="text-3xl lg:text-4xl text-white leading-normal ">{{ header }}</p>
+
+                    <div class="bard !text-white">
+                        {{ description }}
+                    </div>
+                </div>
+                {{ /advantages }}
+            </div>
+        </div>
+
+
+        <div class="col-span-1 lg:col-span-4 lg:col-start-9 p-6 bg-white rounded-2xl border border-black/15 shadow-2xl shadow-nile-blue-500/15 z-20">
+            <form method="post" x-data="formCareersHandler('/!/forms/{{ careers_form.handle }}')"
+                @submit.prevent="submitForm" class="space-y-4" enctype="multipart/form-data">
+                <!-- Full Name -->
+                <input type="text" name="_token" value="{{ csrf_token }}" class="hidden" />
+                <input type="text" name="honeypot" class="hidden" />
+                <div>
+                    <label for="full_name" class="block">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" class="w-full p-2 border rounded"
+                        placeholder="Enter your full name" required />
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block">Email</label>
+                    <input type="email" name="email" id="email" class="w-full p-2 border rounded" placeholder="Enter your email"
+                        required />
+                </div>
+
+                <!-- Cover letter -->
+                <div>
+                    <label for="cover_letter" class="block">Cover letter</label>
+                    <input type="file" name="cover_letter" id="cover_letter" class="w-full border rounded file:py-2 file:px-4 file:border-none file:bg-nile-blue-500 file:text-base file:text-white" required />
+                </div>
+
+                <!-- CV -->
+                <div>
+                    <label for="cv" class="block">CV</label>
+                    <input type="file" name="cv" id="cv" class="w-full border rounded file:py-2 file:px-4 file:border-none file:bg-nile-blue-500 file:text-base file:text-white" required />
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block ">Message</label>
+                    <textarea id="message" name="message" class="w-full p-2 border rounded" rows="4" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full btn btn-primary justify-center" :disabled="isSubmitting">
+                    <span x-show="!isSubmitting">Submit</span>
+                    <span x-show="isSubmitting">Submitting...</span>
+                </button>
+
+                <!-- Submission Success Message -->
+                <div x-show="submitted" class="mt-4 text-green-600 font-semibold">
+                    Thank you! Your message has been sent.
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    function formCareersHandler(endpoint) {
+        return {
+            isSubmitting: false,
+            submitted: false,
+            async submitForm() {
+                this.isSubmitting = true;
+                this.submitted = false;
+
+                // Automatically gather all form data using this.$root
+                const formData = new FormData(this.$root);
+
+                // Example of sending data
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (response.ok) {
+                        this.submitted = true;
+                        this.$root.reset(); // Reset form inputs, including file inputs
+                    } else {
+                        const errorText = await response.text();
+                        console.error('Error:', errorText);
+                    }
+                } catch (error) {
+                    console.error('Submission failed:', error);
+                } finally {
+                    this.isSubmitting = false;
+                }
+            }
+        }
+    }
+</script>

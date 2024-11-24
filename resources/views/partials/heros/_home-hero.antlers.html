@@ -1,21 +1,21 @@
 <div class="flex justify-center py-16 relative overflow-hidden rounded-b-3xl" data-dark-hero>
 
     <!-- Original background image -->
-    {{ if data.use_a_video_for_background }}
-        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover" poster="{{ data.video.preview.url }}" style="object-position: {{ data.image.focus_css }};">
-            <source src="{{ data.video.webm.url }}" type="video/webm">
-            <source src="{{ data.video.mp4.url }}" type="video/mp4">
+    {{ if use_a_video_for_background }}
+        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover" poster="{{ video.preview.url }}" style="object-position: {{ image.focus_css }};">
+            <source src="{{ video.webm.url }}" type="video/webm">
+            <source src="{{ video.mp4.url }}" type="video/mp4">
         </video>
 
-        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover blur-lg " poster="{{ data.video.preview.url }}" style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
-            <source src="{{ data.video.webm.url }}" type="video/webm">
-            <source src="{{ data.video.mp4.url }}" type="video/mp4">
+        <video autoplay muted loop playsinline class="absolute left-0 top-0 w-full h-full object-cover blur-lg " poster="{{ video.preview.url }}" style="clip-path: url(#hero_clip_path); object-position: {{ image.focus_css }};">
+            <source src="{{ video.webm.url }}" type="video/webm">
+            <source src="{{ video.mp4.url }}" type="video/mp4">
         </video>
     {{ else }}
-        <img src="{{ data.image.url }}" alt="bg-image" class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ data.image.focus_css }};">
+        <img src="{{ image.url }}" alt="bg-image" class="absolute left-0 top-0 w-full h-full object-cover" style="object-position: {{ image.focus_css }};">
         
         <!-- Blurred image with clip path applied -->
-        <img src="{{ data.image.url }}" alt="bg-blured-image" class="absolute left-0 top-0 w-full h-full object-cover blur-xl" style="clip-path: url(#hero_clip_path); object-position: {{ data.image.focus_css }};">
+        <img src="{{ image.url }}" alt="bg-blured-image" class="absolute left-0 top-0 w-full h-full object-cover blur-xl" style="clip-path: url(#hero_clip_path); object-position: {{ image.focus_css }};">
     {{ /if }}
 
     <!-- SVG defining the clip path, anchored to the right -->
@@ -28,12 +28,12 @@
     <div class=" bg-gradient-to-t from-black via-black/25 to-transparent absolute left-0 top-0 w-full h-full"></div>
 
     <div class="body-container min-h-[650px] lg:min-h-[750px] py-8 lg:py-16 flex flex-col justify-end lg:grid grid-cols-2 lg:grid-cols-12 gap-4 items-end z-20">
-        <h1 class="text-white text-5xl lg:text-7xl col-span-2 lg:col-span-6" split animate>{{ data.header }}</h1>
+        <h1 class="text-white text-5xl lg:text-7xl col-span-2 lg:col-span-6" split animate>{{ header }}</h1>
 
         <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9" slide-up data-delay="0.3">
-            <div class="dark bard-large">{{ data.description }}</div>
+            <div class="dark bard-large">{{ description }}</div>
 
-            {{ partial:misc/button :data="data.action" }}
+            {{ partial:misc/button :data="action" }}
                 <img src="/assets/arrow.svg" alt="arrow">
             {{ /partial:misc/button }}
         </div>

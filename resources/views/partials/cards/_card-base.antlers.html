@@ -1,12 +1,10 @@
 ---
-style: blue
 fitheight: false
 ---
 
 <div class="flex flex-col {{ if fitheight }} h-fit {{ else }} justify-between {{ /if }} gap-8 p-6 rounded-xl bg-white border duration-300 hover:border-nile-blue-800/50 ring-nile-blue-500/10 hover:ring-4 group relative overflow-hidden">
     {{ if data.icon }}
-        <div class="z-20 size-12 rounded-full flex items-center justify-center {{ if !data.color }} bg-gradient-to-tr from-[#2D79B8] to-[#143652] 
-        {{ if view:style=='green' }} !bg-gradient-to-tr !from-[#08B86E] !to-[#08834F] {{ /if }} {{ /if }}"
+        <div class="z-20 size-12 rounded-full flex items-center justify-center {{ if !data.color }} bg-gradient-to-tr from-[#2D79B8] to-[#143652] {{ /if }}"
         {{ if data.color }} style="background: linear-gradient(45deg, {{ data.color }} 0%, {{ data.color_end }} 100%);" {{ /if }}>
             <img src={{ data.icon.url }} alt="Icon" class="size-6">
         </div>

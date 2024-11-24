@@ -1,0 +1,26 @@
+---
+text-wide: false
+---
+
+<div class="flex justify-center py-14 lg:py-20">
+    <div class="body-container grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-4">
+
+        <div class="w-full py-16 col-span-2 min-h-[450px] relative {{ if view:text-wide }} lg:col-span-4 {{ else }} lg:col-span-6 {{ /if }}">
+            <img src="{{ image.url }}" alt="{{ image.alt }}" class="ukiyo w-full h-full rounded-2xl absolute left-0 top-0 object-cover"/>
+        </div>
+
+        <div class="flex flex-col gap-8 lg:gap-12 col-span-2 {{ if view:text-wide }} lg:col-span-6 lg:col-start-7 {{ else }} lg:col-span-4 lg:col-start-9 {{ /if }} justify-center">
+            <div class="flex flex-col gap-6 lg:gap-8">
+                <p class="text-3xl lg:text-4xl text-nile-blue-800 leading-normal "  slide-up data-delay="0">{{ header }}</p>
+
+                <div class="bard-large">
+                    {{ description }}
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+</div>

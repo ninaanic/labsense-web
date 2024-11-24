@@ -3,8 +3,8 @@
     <div class="body-container flex flex-col gap-12 z-20">
 
         <div class="!h-[450px] w-full rounded-3xl object-cover block overflow-hidden relative">
-            <img src="{{ data.image.url }}" alt="{{ data.image.alt }}" class="absolute left-0 top-0 h-full w-full object-cover ukiyo"/>
-            <img src="{{ data.image.url }}" alt="{{ data.image.alt }}" class="absolute left-0 top-0 h-full w-full object-cover blur-xl ukiyo" style="clip-path: url(#hero_clip_path);"/>
+            <img src="{{ image.url }}" alt="{{ image.alt }}" class="absolute left-0 top-0 h-full w-full object-cover ukiyo"/>
+            <img src="{{ image.url }}" alt="{{ image.alt }}" class="absolute left-0 top-0 h-full w-full object-cover blur-xl ukiyo" style="clip-path: url(#hero_clip_path);"/>
 
             <!-- SVG defining the clip path, anchored to the right -->
             <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-0 top-0 h-full object-cover object-right">
@@ -15,12 +15,12 @@
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-12 gap-4 items-end ">
-            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl col-span-2 lg:col-span-6" split animate>{{ data.header }}</h1>
+            <h1 class="text-nile-blue-800 text-5xl lg:text-6xl col-span-2 lg:col-span-6" split animate>{{ header }}</h1>
 
             <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9" slide-up data-delay="0.3">
-                <div class="bard-large">{{ data.description }}</div>
+                <div class="bard-large">{{ description }}</div>
 
-                {{ partial:misc/button :data="data.action" }}
+                {{ partial:misc/button :data="action" }}
                     <img src="/assets/arrow.svg" alt="arrow">
                 {{ /partial:misc/button }}
             </div>
