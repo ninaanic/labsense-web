@@ -15,7 +15,7 @@ blocks:
     description: 'Labsense empowers faster, more effective testing. Join us in transforming the future of pharmaceutical innovation!'
     action:
       text: 'Contact us'
-      link: '#contact-us'
+      link: '#contact-us-modal'
     type: two_columns_text_hero
     enabled: true
   -

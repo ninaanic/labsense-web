@@ -3,8 +3,8 @@
     {{ if type=='video_or_image_hero' }}
         {{ partial:heros/home-hero }}
     {{ /if }}
-    {{ if type=='two_columns_text' }}
-        {{ partial:text-blocks/two-cols }}
+    {{ if type=='single_column_text' }}
+        {{ partial:text-blocks/single_column_text }}
     {{ /if }}
     {{ if type=='spacer' }}
         {{ partial:misc/spacer }}
@@ -35,6 +35,9 @@
     {{ /if }}
     {{ if type=='two_columns_text_hero' }}
         {{ partial:heros/two_columns_text_hero }}
+    {{ /if }}
+    {{ if type=='job_position_block' }}
+        {{ partial:special/job_position_block }}
     {{ /if }}
     {{ if type=='cards_grid' }}
         {{ partial:cards/cards_grid }}
