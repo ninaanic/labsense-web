@@ -5,16 +5,17 @@
         // Listen to hash changes
         window.addEventListener('hashchange', () => {
             isOpen = window.location.hash === '#job-apply-modal';
+            if (isOpen) submitted = false; // Clear message when modal reopens
         });
     "
     x-show="isOpen"
     x-cloak
     class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
     <!-- Modal Content -->
-    <div class="bg-white p-6 rounded shadow-lg max-w-lg w-full dark" @click.away="isOpen = false; window.location.hash = ''">
+    <div class="bg-white p-6 rounded shadow-lg max-w-lg w-full dark" @click.away="isOpen = false; submitted = false; window.location.hash = ''">
         <h2 class="text-2xl text-nile-blue-900 mb-4">Job application</h2> 
 
-        <form method="post" x-data="formCareersHandler('/!/forms/{{ careers_form.handle }}')"
+        <form method="post" x-data="formCareersHandler('/!/forms/careers')"
             @submit.prevent="submitForm" class="space-y-4" enctype="multipart/form-data">
             <!-- Full Name -->
             <input type="text" name="_token" value="{{ csrf_token }}" class="hidden" />
