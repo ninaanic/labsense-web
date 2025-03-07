@@ -11,7 +11,9 @@ blocks:
     id: m3w0qx77
     title: Careers
     header: Open Positions
-    description: 'See open positions below.'
+    description: 'Looking for a rewarding career in a dynamic and professional environment?<br>
+                Explore our open positions and become part of our innovative team. We are committed to excellence, professional growth, and fostering a culture of collaboration.
+                Browse our job openings and take the next step in your career with us!'
     type: single_column_text
     enabled: true
   -
@@ -46,7 +48,52 @@ blocks:
         - 'Work in compliance with the highest laboratory practice standards'
     closing_message: 'If you are precise, responsible, and interested in laboratory work, join us and become part of our team!'
     action:
-      text: 'Apply to job'
+      text: 'Apply'
+      link: '#job-apply-modal'
+    type: job_position_block
+    enabled: true
+  -
+    id: m3w0qx41
+    job_title: 'Research And Development Manager'
+    department: 'Quality Control and Quality Assurance'
+    employment_type: 'Full-time'
+    education: 'Master’s degree or PhD in Chemistry, Pharmacy, or a related scientific field'
+    work_experience: 'Minimum of 5-7 years of experience in an R&D department, within the pharmaceutical industry'
+    location: 'Borongajska cesta 83H, 10000 Zagreb'
+    responsibilities:
+        - Developing and executing the R&D strategy in line with company objectives
+        - Managing and coordinating all R&D projects, from initial planning to implementation and transfer into routine use
+        - Overseeing development, optimization, and validation of new analytical methods
+        - Leading the implementation of new technologies and analytical techniques (HPLC, GC, LC-MS/MS, and others)
+        - Ensuring all R&D activities comply with internal quality systems and relevant regulations (ISO 17025, ISO 9001, GMP, and GLP)
+        - Collaborating with Quality Control to ensure smooth method transfers and support troubleshooting
+        - Identifying opportunities for process improvements and fostering a culture of innovation
+        - Managing, mentoring, and developing R&D team members
+        - Preparing technical documentation, reports, and presentations for internal purposes, clients, and regulatory authorities
+        - Participating in internal and external audits and ensuring all R&D documentation is audit-ready
+        - Staying up-to-date with scientific advancements and industry trends to ensure continuous improvement
+
+    requirements:
+        - Master’s degree or PhD in Chemistry, Pharmacy, or a related scientific field
+        - Minimum of 5-7 years of experience in an R&D department, within the pharmaceutical industry
+        - Proven expertise in analytical techniques such as HPLC, GC, and LC-MS/MS
+        - Strong knowledge and practical experience with method development, optimization, and validation according to regulatory standards (e.g., ICH guidelines)
+        - Familiarity with ISO 17025, ISO 9001, GMP, and GLP
+        - Excellent project management and organizational skills
+        - Strong leadership abilities with experience in managing teams and mentoring staff
+        - Analytical mindset, strong problem-solving skills, and attention to detail
+        - Excellent verbal and written communication skills in English
+
+    offers:
+        - The opportunity to lead and shape the R&D department in a growing and innovative laboratory
+        - Work with modern equipment and advanced analytical technologies
+        - Collaboration with cross-functional teams in a dynamic environment
+        - Competitive salary and benefits package
+        - Professional development through internal and external training and conferences
+
+    closing_message: 'If you are passionate about innovation, analytical excellence, and leading high-performing teams, we want to hear from you!'
+    action:
+      text: 'Apply'
       link: '#job-apply-modal'
     type: job_position_block
     enabled: true

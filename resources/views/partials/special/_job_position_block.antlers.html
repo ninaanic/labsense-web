@@ -1,18 +1,20 @@
 <div class="flex justify-center pt-24 pb-8 relative overflow-hidden rounded-b-3xl">
     <div class="body-container flex flex-col gap-12 z-20" x-data="{ open: false }">
+
         <div class="grid grid-cols-2 lg:grid-cols-12 gap-4 items-end">
             
-            <!-- Left Side: Header & Description -->
-            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-6">
+            <!-- Left Side: Job Details (Expands to Match Button Height) -->
+            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-8">
                 <h2 class="text-nile-blue-800 text-4xl cursor-pointer" @click="open = !open">
                     {{ job_title }}
                 </h2>
-                <div class="bard-large" >
+                <div class="bard-large">
                     <h3><strong>Department:</strong> {{ department }}</h3>
                     <h3><strong>Location:</strong> {{ location }}</h3>
                 </div>
 
-                <div x-show="open" x-transition class="text-nile-blue-800 text-lg space-y-4 bg-gray-100 p-4 rounded-lg shadow-md">
+                <!-- Expanding Section - Takes full width up to Apply Button -->
+                <div x-show="open" x-transition class="text-nile-blue-800 text-lg space-y-4 bg-gray-100 p-4 rounded-lg shadow-md w-full lg:max-w-5xl">
                     <p><strong>Employment Type:</strong> {{ employment_type }}</p>
                     <p><strong>Education:</strong> {{ education }}</p>
                     <p><strong>Work Experience:</strong> {{ work_experience }}</p>
@@ -20,21 +22,21 @@
                     <h3 class="text-lg font-semibold mt-4">Job Description and Responsibilities:</h3>
                     <ul class="list-disc list-inside space-y-1">
                         {{ responsibilities }}
-                            <li> - {{ value }}</li>
+                            <li>- {{ value }}</li>
                         {{ /responsibilities }}
                     </ul>                   
 
                     <h3 class="text-lg font-semibold mt-4">Requirements:</h3>
                     <ul class="list-disc list-inside">
                         {{ requirements }}
-                            <li> - {{ value }}</li>
+                            <li>- {{ value }}</li>
                         {{ /requirements }}
                     </ul>
 
                     <h3 class="text-lg font-semibold mt-4">We Offer:</h3>
                     <ul class="list-disc list-inside">
                         {{ offers }}
-                            <li> - {{ value }}</li>
+                            <li>- {{ value }}</li>
                         {{ /offers }}
                     </ul>
 
@@ -42,8 +44,8 @@
                 </div>
             </div>
 
-            <!-- Right Side: Action Button -->
-            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9" slide-up data-delay="1">
+            <!-- Right Side: Apply Button -->
+            <div class="flex flex-col gap-6 lg:gap-8 col-span-2 lg:col-span-4 lg:col-start-9 self-start">
                 {{ if action.text }}
                     {{ partial:misc/button :data="action" }}
                         <img src="/assets/arrow.svg" alt="arrow">
@@ -54,4 +56,3 @@
         </div>
     </div>
 </div>
-

@@ -14,8 +14,6 @@
     <div class="bg-white p-6 rounded shadow-lg max-w-lg w-full dark" @click.away="isOpen = false; window.location.hash = ''">
         <h2 class="text-2xl text-nile-blue-900 mb-4">Job application</h2> 
 
-        <!-- todo dodaj koja je ovo pozicija-->
-
         <form method="post" x-data="formCareersHandler('/!/forms/{{ careers_form.handle }}')"
             @submit.prevent="submitForm" class="space-y-4" enctype="multipart/form-data">
             <!-- Full Name -->
@@ -44,12 +42,6 @@
             <div>
                 <label for="cv" class="block">CV</label>
                 <input type="file" name="cv" id="cv" class="w-full border rounded file:py-2 file:px-4 file:border-none file:bg-nile-blue-500 file:text-base file:text-white" required />
-            </div>
-
-            <!-- Message -->
-            <div>
-                <label for="message" class="block ">Message</label>
-                <textarea id="message" name="message" class="w-full p-2 border rounded" rows="4" placeholder="Enter your message" required></textarea>
             </div>
 
             <!-- Submit Button -->
